@@ -9,6 +9,7 @@ description: "Module 5 of Entrepreneurial Finance"
 Focus on the core venture finance decisions tied to **Week 5**: opportunity selection, risk trade-offs, and investor-style reasoning.
 </Callout>
 
+
 ## Module Task
 
 - [ ] Design a cap table for a seed round and illustrate dilution for founders and investors.
@@ -33,20 +34,79 @@ Focus on the core venture finance decisions tied to **Week 5**: opportunity sele
 
 ## Main Content
 
-### Topic narrative
+### Chapter 1: Definitions and valuation lenses
 
-- Early-stage valuation is part art, part science due to uncertainty and limited history.
-- VCs triangulate using DCF (illustrative), comparables, and VC method.
-- **VC method example:** Forecast exit in ~5 years and discount at 40–50% annually; yields lower valuations than founder projections.
-- **Qualitative inputs:** Team, market size, technology, traction, and competitive landscape often outweigh cash-flow forecasts.
-- **Heuristic methods:**
-  - Berkus Method assigns value to idea, prototype, and team with a cap (e.g., $2M).
-  - Comparable deals can be per-user or revenue multiple-based.
-- **Pre- vs. post-money:** Post-money = pre-money + investment; investor % = investment / post-money.
-- **Option pool effects:** Pre-money pool creation dilutes founders before investors enter; founders prefer post-money pools to share dilution.
-- **VC return expectations:** 10×–30× targets are common because most startups fail; a few winners return the fund.
-- **Discount rates:** High (30–60%) to reflect failure risk and future dilution; can surprise founders.
-- **Market cycles:** Frothy markets push valuations up; downturns increase flat or down rounds.
+Valuation is a **range** informed by method choice and assumptions.
+
+- **DCF:** Discount future cash flows by a high risk rate.
+- **Comparables:** Apply revenue/user multiples from similar deals.
+- **VC method:** Back-solve from exit value and target return.
+
+<Callout type="info" title="Triangulate, don’t anchor">
+No single method is “right”; use multiple methods to bracket a range.
+</Callout>
+
+<CardGroup>
+  <Card title="Method triangulation" icon="compass">
+    DCF, comps, and VC method should converge on a range.
+  </Card>
+  <Card title="Sensitivity" icon="sliders">
+    Test growth, margin, and discount rate assumptions.
+  </Card>
+  <Card title="Term impact" icon="handshake">
+    Valuation is only one part of total deal economics.
+  </Card>
+</CardGroup>
+
+### Chapter 2: Frameworks and decision tools
+
+<Tabs>
+  <Tab title="DCF logic">
+    - Forecast cash flows (years 1–5)
+    - Apply terminal multiple
+    - Discount at 30–60% for startup risk
+  </Tab>
+  <Tab title="Comparables logic">
+    - Pick comparable companies
+    - Choose relevant multiple (ARR, users)
+    - Adjust for growth and margin differences
+  </Tab>
+</Tabs>
+
+### Chapter 3: Investor vs. founder perspective
+
+| Dimension | Founder lens | Investor lens | Implication |
+| --- | --- | --- | --- |
+| Forecasts | Optimistic growth | Base case with risk | Sensitivity checks |
+| Multiples | Best peer comps | Median or discounted comps | Range negotiation |
+| Risk | Vision upside | Downside protection | Terms matter |
+| Timing | Raise at peak | Price with cycle risk | Market windows |
+
+### Chapter 4: Worked example with numbers
+
+**Scenario:** $1M ARR SaaS with 100% YoY growth.
+
+| Method | Assumption | Value |
+| --- | --- | --- |
+| Comps | 6× ARR | $6M |
+| VC method | $60M exit ÷ 10× | $6M post-money |
+| DCF | $1.5M FCF by Year 5, 40% discount | ~$5M |
+
+**Range:** $5M–$7M post-money before term adjustments.
+
+### Chapter 5: Summary checklist
+
+<Steps>
+  <Step title="Bracket a range">
+    Use at least two methods to avoid anchoring.
+  </Step>
+  <Step title="Pressure-test">
+    Run sensitivity on growth and margin assumptions.
+  </Step>
+  <Step title="Negotiate holistically">
+    Evaluate valuation alongside liquidation, control, and pool terms.
+  </Step>
+</Steps>
 
 ## Worked Examples
 
@@ -144,23 +204,29 @@ Focus on the core venture finance decisions tied to **Week 5**: opportunity sele
 
 ## Practice Questions
 
-<Steps>
-  <Step title="Triangulate a range">
-    Compute valuation using VC method, a revenue multiple, and a Berkus-style heuristic.
-  </Step>
-  <Step title="Reconcile the spread">
-    Choose a defensible range and note which assumptions drive the highest number.
-  </Step>
-  <Step title="Negotiate terms">
-    Decide which non-valuation terms you would trade to protect founder control.
-  </Step>
-</Steps>
-
-<Tabs>
-  <Tab title="Term Sheet A analysis">
-    List two reasons the lower valuation might be better (clean terms, faster close, better partner).
-  </Tab>
-  <Tab title="Term Sheet B analysis">
-    List two risks hidden in the higher valuation (milestone penalties, anti-dilution, control).
-  </Tab>
-</Tabs>
+<AccordionGroup>
+  <Accordion title="DCF intuition">
+    **Question:** Why are startup discount rates often 30–60%?  
+    **Answer:** High failure risk and long time horizons.
+  </Accordion>
+  <Accordion title="Comparables">
+    **Question:** If ARR is $2M and the peer multiple is 8×, what is implied value?  
+    **Answer:** $16M.
+  </Accordion>
+  <Accordion title="VC method">
+    **Question:** If exit is $120M and target return is 12×, what post-money value fits a $5M check?  
+    **Answer:** $10M post-money (investor needs $60M; $60M ÷ $120M = 50% ownership → $5M ÷ 50% = $10M).
+  </Accordion>
+  <Accordion title="Range setting">
+    **Question:** Why should founders avoid anchoring on a single method?  
+    **Answer:** Different methods capture different risks and can vary widely.
+  </Accordion>
+  <Accordion title="Down round risk">
+    **Question:** What is one consequence of overvaluation?  
+    **Answer:** Increased risk of a down round and morale damage.
+  </Accordion>
+  <Accordion title="Term trade-offs">
+    **Question:** Which term might you give up for a higher valuation?  
+    **Answer:** Stronger liquidation preference or board control (hint: avoid if too punitive).
+  </Accordion>
+</AccordionGroup>
