@@ -9,6 +9,7 @@ description: "Module 3 of Entrepreneurial Finance"
 Focus on the core venture finance decisions tied to **Week 3**: opportunity selection, risk trade-offs, and investor-style reasoning.
 </Callout>
 
+
 ## Module Task
 
 - [ ] Build a simple three-scenario revenue forecast (base, downside, upside) and identify the key assumptions.
@@ -36,40 +37,80 @@ Focus on the core venture finance decisions tied to **Week 3**: opportunity sele
 
 ## Main Content
 
-### Financial projections under uncertainty
+### Chapter 1: Definitions and financial building blocks
 
-- Early-stage startups still need financial projections to plan capital needs and milestones.
-- Projections are about assumptions, not precision; they show how the business model can become viable.
-- Milestone-based funding helps avoid running out of cash before the next round.
-- Being realistic and conservative is essential; cash shortfalls are a top cause of failure.
-- Projections should connect to basic startup financial statements like the income statement and cash flow statement.
-- Metrics like EBITDA or months to breakeven may be negative early on, but still provide structure for planning.
+Financial projections convert strategy into **numbers, timing, and cash**.
 
-### Burn rate, runway, and cash management
+- **Income statement:** Revenue, expenses, and profitability.
+- **Cash flow:** Actual cash movement; determines survival.
+- **Burn rate:** Monthly net cash outflow.
+- **Runway:** Cash ÷ burn rate.
 
-- Burn rate indicates monthly cash usage; runway measures how long cash lasts.
-- Founders must track burn to plan fundraising timing and milestone delivery.
-- Investors evaluate how long a raise will last and what milestones it unlocks.
+<Callout type="warning" title="Cash reality">
+A profitable income statement can still hide a cash crisis.
+</Callout>
 
-### Unit economics and business model viability
+<CardGroup>
+  <Card title="Revenue drivers" icon="chart-column">
+    Pricing, conversion, and retention assumptions that power the model.
+  </Card>
+  <Card title="Cost structure" icon="coins">
+    COGS, headcount, and fixed costs that define burn.
+  </Card>
+  <Card title="Cash runway" icon="hourglass">
+    Months of survival at current burn and scenarios.
+  </Card>
+</CardGroup>
 
-- Product businesses focus on gross margin per unit.
-- SaaS and subscription ventures focus on CAC, LTV, ARPU, and churn.
-- Investors expect a credible path from early losses to sustainable margins and scale.
-- Weak unit economics (LTV &lt; CAC) signal a non-viable model unless fixed.
+### Chapter 2: Frameworks and decision tools
 
-### Scenario analysis and critical assumptions
+<Tabs>
+  <Tab title="Driver-based model">
+    - Revenue drivers (pricing × volume)
+    - Cost drivers (COGS %, headcount)
+    - Working capital (collections, payables)
+  </Tab>
+  <Tab title="3-statement linkage">
+    - Income statement → Net income
+    - Balance sheet → Cash, AR, AP
+    - Cash flow → Runway and financing needs
+  </Tab>
+</Tabs>
 
-- Startups should model base, best, and worst cases to reveal risk.
-- Identify key assumptions (conversion rates, sales cycle, pricing) and monitor them.
-- Build buffers for delays and unexpected costs; funding should exceed the bare minimum.
+### Chapter 3: Investor vs. founder perspective
 
-### Metrics for investor evaluation
+| Dimension | Founder lens | Investor lens | Implication |
+| --- | --- | --- | --- |
+| Revenue | Vision and TAM | Proof of unit economics | Cohort data matters |
+| Expenses | Build fast | Spend to milestones | Burn must match traction |
+| Forecasts | Best-case growth | Conservative base case | Sensitivity analysis |
+| Cash need | “Raise enough” | Minimize dilution | Capital efficiency wins |
 
-- MRR growth shows momentum; churn reveals retention quality.
-- CAC and LTV ratios indicate acquisition efficiency.
-- Burn multiple (net burn / net new ARR) compares cash use vs. growth.
-- Investors use these to compare startups and spot operational weakness.
+### Chapter 4: Worked example with numbers
+
+**Scenario:** 12-month plan for a B2B SaaS startup.
+
+| Month | MRR | COGS (20%) | Opex | Net Burn |
+| --- | --- | --- | --- | --- |
+| 1 | $10k | $2k | $60k | -$52k |
+| 6 | $40k | $8k | $75k | -$43k |
+| 12 | $90k | $18k | $95k | -$23k |
+
+**Runway check:** $900k cash ÷ $50k avg burn ≈ **18 months**.
+
+### Chapter 5: Summary checklist
+
+<Steps>
+  <Step title="Build drivers">
+    Tie revenue to a few measurable drivers (pricing × conversion × volume).
+  </Step>
+  <Step title="Stress-test">
+    Model base, upside, and downside cases with churn sensitivity.
+  </Step>
+  <Step title="Translate to funding">
+    Raise enough to reach the next milestone plus a buffer.
+  </Step>
+</Steps>
 
 ## Worked Examples
 
@@ -243,23 +284,29 @@ $$
 
 ## Practice Questions
 
-<Steps>
-  <Step title="Calculate runway">
-    Using the FinFix case, compute net burn and months of runway after increasing marketing to $20k/month.
-  </Step>
-  <Step title="Stress-test assumptions">
-    Reduce growth by 50% and recompute when cash runs out.
-  </Step>
-  <Step title="Decide funding timing">
-    Identify the earliest month the company should start fundraising to avoid a cash crunch.
-  </Step>
-</Steps>
-
-<Tabs>
-  <Tab title="SaaS metrics focus">
-    List the three most important metrics you’d report to investors each month (e.g., MRR growth, churn, CAC payback).
-  </Tab>
-  <Tab title="Product business focus">
-    List the three most important metrics for a hardware startup (e.g., gross margin, inventory turns, cash conversion cycle).
-  </Tab>
-</Tabs>
+<AccordionGroup>
+  <Accordion title="Burn rate">
+    **Question:** If monthly expenses are $80k and gross margin is $20k, what is burn?  
+    **Answer:** $60k per month.
+  </Accordion>
+  <Accordion title="Runway math">
+    **Question:** With $720k in cash and $60k burn, how many months of runway?  
+    **Answer:** 12 months.
+  </Accordion>
+  <Accordion title="Driver model">
+    **Question:** Name two revenue drivers in SaaS.  
+    **Answer:** Price per seat and active seats (or conversion rate).
+  </Accordion>
+  <Accordion title="Cash flow">
+    **Question:** Why can a company with positive net income still run out of cash?  
+    **Answer:** Slow collections, inventory buildup, or upfront expenses.
+  </Accordion>
+  <Accordion title="Sensitivity">
+    **Question:** If churn rises from 4% to 8%, what happens to MRR?  
+    **Answer:** MRR growth slows or declines; runway shortens.
+  </Accordion>
+  <Accordion title="Milestone budgeting">
+    **Question:** What is a common milestone for a seed round?  
+    **Answer:** Proof of product-market fit (e.g., retention and paid growth).
+  </Accordion>
+</AccordionGroup>

@@ -9,6 +9,7 @@ description: "Module 4 of Entrepreneurial Finance"
 Focus on the core venture finance decisions tied to **Week 4**: opportunity selection, risk trade-offs, and investor-style reasoning.
 </Callout>
 
+
 ## Module Task
 
 - [ ] Calculate a pre-money and post-money valuation example using the VC method and explain the inputs.
@@ -34,40 +35,79 @@ Focus on the core venture finance decisions tied to **Week 4**: opportunity sele
 
 ## Main Content
 
-### Topic narrative
+### Chapter 1: Definitions and valuation anatomy
 
-- Valuing startups is difficult because early ventures lack profits and stable cash flows.
-- **VC Method:**
-  - Estimate exit value in 5–7 years.
-  - Apply target return multiple (e.g., 10×, ~58% IRR over 5 years).
-  - Example: $100M exit / 10× = $10M post-money today; $50M exit / 10× = $5M post-money.
-- **DCF for startups:**
-  - Projections are speculative; high discount rates can make present values near zero.
-  - Scenario-based DCF is more common for later-stage startups or as a sanity check.
-- **Comparables:**
-  - Use market multiples (e.g., SaaS at 5–10× ARR; public SaaS at 10×, private at 5–8×).
-  - Example: $2M revenue × 5 = $10M valuation.
-  - Per-user or EBITDA multiples can be used depending on industry.
-- **Negotiation and ownership targets:**
-  - Many VCs target ~20–30% ownership per round.
-  - Valuation often comes down to how much capital is needed and what % investors require.
-- **Cap tables and dilution:**
-  - Example: founders 60/40, seed investor 20% → founders dilute to 48%/32%.
-  - Example share math: Founder A 600k, Founder B 400k (1M total). $2M on $8M pre → $10M post; investor gets 250k shares (20%), total 1.25M shares.
-  - Option pool (e.g., 10% post) may require ~138k new shares, diluting everyone.
-- **SAFEs/convertibles:**
-  - Valuation caps (e.g., $5M) defer pricing but affect future ownership.
-- **Real-world context:**
-  - Famous outcomes (e.g., Instagram at ~$25M early valuation, acquired for $1B) illustrate valuation jumps.
-  - Canada has fewer unicorns, but activity is increasing.
-- By the end, students should compute VC-method valuations, relate raise size to ownership, and read cap tables confidently.
+Valuation converts **future potential** into a **present ownership price**.
 
-### Guest speakers, panels, and prep
+- **Pre-money:** Value before new investment.
+- **Post-money:** Pre-money + new capital.
+- **Dilution:** Ownership reduction from new shares.
+- **Option pool:** Reserved shares for future hires.
 
-- **Panel:** Agtech, cleantech, and social enterprise financing differences (patient capital, grants, impact metrics).
-- **Speakers:** Ariana Song (AgriTech Capital), Dev Singh (CleanEnergy Ventures), Laura Chen (Purpose Fund).
-- **Prep:** Agtech podcast excerpt; TechCrunch cleantech article; optional Impact Report 2024.
-- **Guest founder:** Michael Lee (MindfulUp) on term sheets, board dynamics, and exit decisions.
+<Callout type="note" title="Cap tables tell the story">
+Every valuation choice changes who owns what and who controls the board.
+</Callout>
+
+<CardGroup>
+  <Card title="Valuation range" icon="scale-balanced">
+    Triangulate methods to bracket a realistic price.
+  </Card>
+  <Card title="Ownership impact" icon="percent">
+    Model dilution before negotiating terms.
+  </Card>
+  <Card title="Governance" icon="gavel">
+    Board and control rights shift with valuation.
+  </Card>
+</CardGroup>
+
+### Chapter 2: Frameworks and decision tools
+
+<Tabs>
+  <Tab title="VC method">
+    1. Forecast exit value
+    2. Apply target return (e.g., 10×)
+    3. Discount to post-money today
+  </Tab>
+  <Tab title="Scorecard/Berkus">
+    - Start from a base valuation
+    - Adjust for team, traction, market, and product risk
+  </Tab>
+</Tabs>
+
+### Chapter 3: Investor vs. founder perspective
+
+| Dimension | Founder lens | Investor lens | Implication |
+| --- | --- | --- | --- |
+| Valuation | Maximize price | Optimize risk-adjusted return | Negotiation trade-offs |
+| Option pool | Minimize dilution | Future hiring protection | Pool sizing debate |
+| Governance | Retain control | Board oversight | Term sheet leverage |
+| Timing | Raise later | Raise before cash crisis | Timing affects price |
+
+### Chapter 4: Worked example with numbers
+
+**Scenario:** $2M seed on $6M pre-money with a 10% post-money option pool.
+
+| Holder | Ownership (post) |
+| --- | --- |
+| Founders | 65% |
+| Option pool | 10% |
+| Seed investors | 25% |
+
+**Post-money:** $8M. Investor ownership = $2M ÷ $8M = 25%.
+
+### Chapter 5: Summary checklist
+
+<Steps>
+  <Step title="Pick a method">
+    Triangulate VC method, comps, and qualitative adjustments.
+  </Step>
+  <Step title="Model dilution">
+    Build a cap table before negotiating terms.
+  </Step>
+  <Step title="Align with milestones">
+    Set valuation consistent with traction and upcoming risk.
+  </Step>
+</Steps>
 
 ## Worked Examples
 
@@ -183,23 +223,29 @@ $$
 
 ## Practice Questions
 
-<Steps>
-  <Step title="Build a cap table">
-    Start with 1,000,000 founder shares and add a $2M raise on $8M pre.
-  </Step>
-  <Step title="Add a pool">
-    Insert a 10% post-money option pool and recompute founder ownership.
-  </Step>
-  <Step title="Compare outcomes">
-    Compare dilution with and without the pool to highlight negotiation leverage.
-  </Step>
-</Steps>
-
 <AccordionGroup>
-  <Accordion title="Exit value drill">
-    A VC needs 10× on a $5M investment for 20% ownership. What exit value is required?
+  <Accordion title="Pre vs. post">
+    **Question:** If pre-money is $6M and investment is $2M, what is post-money?  
+    **Answer:** $8M.
   </Accordion>
-  <Accordion title="Negotiation leverage check">
-    Name one factor that could justify a higher valuation (e.g., traction, strategic interest, scarcity).
+  <Accordion title="Ownership math">
+    **Question:** Investor ownership from the above deal?  
+    **Answer:** $2M ÷ $8M = 25% (before pool adjustments).
+  </Accordion>
+  <Accordion title="Option pool">
+    **Question:** Why do investors ask for a pre-money option pool?  
+    **Answer:** It shifts dilution to founders rather than investors.
+  </Accordion>
+  <Accordion title="VC method">
+    **Question:** If exit is $100M and investor needs 10×, what post-money is acceptable for a $5M check?  
+    **Answer:** $50M post-money (needs $50M value for 10× on $5M).
+  </Accordion>
+  <Accordion title="Scorecard">
+    **Question:** Name one factor that increases scorecard valuation.  
+    **Answer:** Strong team or above-average traction.
+  </Accordion>
+  <Accordion title="Dilution effect">
+    **Question:** What happens to founder ownership when a larger option pool is created?  
+    **Answer:** Founder ownership decreases proportionally.
   </Accordion>
 </AccordionGroup>

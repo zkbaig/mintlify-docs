@@ -9,6 +9,7 @@ description: "Module 7 of Entrepreneurial Finance"
 Focus on the core venture finance decisions tied to **Week 7**: opportunity selection, risk trade-offs, and investor-style reasoning.
 </Callout>
 
+
 ## Module Task
 
 - [ ] Construct a funding strategy for a venture using at least two non-VC sources and explain sequencing.
@@ -32,18 +33,81 @@ Focus on the core venture finance decisions tied to **Week 7**: opportunity sele
 
 ## Main Content
 
-### Topic narrative
+### Chapter 1: Definitions and dilution mechanics
 
-- Cap tables are the single source of truth for ownership across founders, investors, and options.
-- Dilution occurs when new shares are issued; founders trade percentage for growth capital.
-- Example: 1M founder shares + 250k new shares → founders drop to 80%.
-- Fully diluted ownership includes all options, warrants, and convertibles.
-- Option pool increases (often pre-money) dilute founders before new investors enter.
-- Preferred shares typically convert to common on IPO or exit; as-converted views clarify ownership.
-- Modeling future rounds helps founders anticipate dilution and maintain control.
-- SAFE conversions can create unexpected dilution if caps are low (“cap table time bombs”).
-- Cap table tools (Carta, Capshare) and spreadsheet models help track ownership.
-- Rule of thumb: prefer a smaller % of a bigger company; dilution is normal if value rises.
+Cap tables track **ownership**, **options**, and **dilution** across rounds.
+
+- **Fully diluted shares:** All shares including options and convertibles.
+- **Pro rata rights:** Right to maintain ownership in future rounds.
+- **Option pool shuffle:** Pool size and timing shift dilution.
+
+<Callout type="note" title="Dilution is not always bad">
+If new capital increases enterprise value faster than ownership falls, founders can still win.
+</Callout>
+
+<CardGroup>
+  <Card title="Ownership tracking" icon="table">
+    Monitor fully diluted ownership after each round.
+  </Card>
+  <Card title="Option pool" icon="users">
+    Size the pool to real hiring needs.
+  </Card>
+  <Card title="Pro rata" icon="repeat">
+    Decide when to defend ownership vs. accept dilution.
+  </Card>
+</CardGroup>
+
+### Chapter 2: Frameworks and decision tools
+
+<Tabs>
+  <Tab title="Round-by-round table">
+    Track: pre-money, new money, post-money, and ownership % each round.
+  </Tab>
+  <Tab title="Option pool planning">
+    Start with a hiring plan → translate into a pool size (10–20%).
+  </Tab>
+</Tabs>
+
+### Chapter 3: Investor vs. founder perspective
+
+| Dimension | Founder lens | Investor lens | Implication |
+| --- | --- | --- | --- |
+| Dilution | Preserve control | Fund company growth | Balance trade-offs |
+| Pro rata | Optional | Protect winners | Follow-on economics |
+| Pool size | Smaller now | Hire future team | Pool timing matters |
+| SAFEs | Simple | Valuation cap risk | Convertibles shift math |
+
+### Chapter 4: Worked example with numbers
+
+**Scenario:** Seed and Series A with a 15% option pool.
+
+| Round | Pre-money | New Money | Post-money | Founder % (FD) |
+| --- | --- | --- | --- | --- |
+| Seed | $6M | $2M | $8M | 65% |
+| Series A | $18M | $6M | $24M | 45% |
+
+**Cap table after Series A (simplified)**
+
+| Holder | Ownership |
+| --- | --- |
+| Founders | 45% |
+| Seed investors | 20% |
+| Series A investors | 25% |
+| Option pool (unallocated) | 10% |
+
+### Chapter 5: Summary checklist
+
+<Steps>
+  <Step title="Build the table">
+    Model each round with fully diluted shares.
+  </Step>
+  <Step title="Plan hiring">
+    Size the option pool based on real hiring needs.
+  </Step>
+  <Step title="Protect upside">
+    Use pro rata thoughtfully to avoid over-dilution.
+  </Step>
+</Steps>
 
 ## Worked Examples
 
@@ -137,23 +201,29 @@ Focus on the core venture finance decisions tied to **Week 7**: opportunity sele
 
 ## Practice Questions
 
-<Steps>
-  <Step title="Build a pro forma table">
-    Start with 1,000,000 founder shares, add a 10% option pool, and raise $2M on $8M pre.
-  </Step>
-  <Step title="Add a SAFE">
-    Convert a $1M SAFE at a $5M cap and update the ownership breakdown.
-  </Step>
-  <Step title="Interpret control">
-    Identify whether founders still control a board majority after the round.
-  </Step>
-</Steps>
-
-<Tabs>
-  <Tab title="Raise less">
-    List two benefits of raising a smaller round (less dilution, more optionality).
-  </Tab>
-  <Tab title="Raise more">
-    List two benefits of raising a larger round (longer runway, faster milestones).
-  </Tab>
-</Tabs>
+<AccordionGroup>
+  <Accordion title="Fully diluted">
+    **Question:** What is included in fully diluted shares?  
+    **Answer:** All common, preferred, options, and convertibles.
+  </Accordion>
+  <Accordion title="Pro rata">
+    **Question:** Why do investors seek pro rata rights?  
+    **Answer:** To maintain ownership in high-performing companies.
+  </Accordion>
+  <Accordion title="Option pool">
+    **Question:** If a 10% option pool is added pre-money, who bears the dilution?  
+    **Answer:** Founders (and existing shareholders) bear it first.
+  </Accordion>
+  <Accordion title="Round math">
+    **Question:** If pre-money is $8M and you raise $2M, what is post-money?  
+    **Answer:** $10M.
+  </Accordion>
+  <Accordion title="SAFE impact">
+    **Question:** Why can SAFEs complicate cap table forecasts?  
+    **Answer:** Conversion happens later and can be at variable caps/discounts.
+  </Accordion>
+  <Accordion title="Value vs. dilution">
+    **Question:** When is dilution acceptable?  
+    **Answer:** When capital increases enterprise value faster than ownership decreases.
+  </Accordion>
+</AccordionGroup>
