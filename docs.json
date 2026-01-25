@@ -14,6 +14,15 @@
         "tab": "Textbook",
         "groups": [
           {
+            "group": "Home",
+            "pages": [
+              {
+                "page": "index",
+                "title": "Home"
+              }
+            ]
+          },
+          {
             "group": "Start here",
             "pages": [
               "textbook/index",
