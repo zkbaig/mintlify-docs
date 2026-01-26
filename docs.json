@@ -4,8 +4,24 @@
   "name": "Sector Ventures",
   "colors": {
     "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "light": "#2ED27A",
+    "dark": "#0F6B33",
+    "background": {
+      "light": "#F7FBF8",
+      "dark": "#0C1913"
+    },
+    "border": {
+      "light": "#D5E6DB",
+      "dark": "#274136"
+    },
+    "text": {
+      "light": "#0F1F17",
+      "dark": "#E7F3EC"
+    },
+    "accent": {
+      "light": "#E6F6EE",
+      "dark": "#123124"
+    }
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -78,5 +94,8 @@
     "socials": {
       "linkedin": "https://linkedin.com"
     }
-  }
+  },
+  "styles": [
+    "/styles/brand.css"
+  ]
 }
