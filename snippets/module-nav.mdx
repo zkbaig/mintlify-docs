@@ -1,0 +1,21 @@
+export default function ModuleNav({
+  previous,
+  next,
+  previousLabel = "Previous module",
+  nextLabel = "Next module",
+}) {
+  return (
+    <CardGroup>
+      {previous ? (
+        <Card title="Previous module" icon="arrow-left" href={previous}>
+          {previousLabel}
+        </Card>
+      ) : null}
+      {next ? (
+        <Card title="Next module" icon="arrow-right" href={next}>
+          {nextLabel}
+        </Card>
+      ) : null}
+    </CardGroup>
+  );
+}
