@@ -39,7 +39,7 @@ Focus on the core venture finance decisions tied to **Module 10**: opportunity s
 
 <CardGroup>
   <Card title="Module theme" icon="compass">
-    Limited partner (LP)–general partner (GP) relationships, fund economics, and incentive alignment.
+    Limited partner (LP) investors supply capital, while general partners (GPs) manage investments, fund economics, and incentive alignment.
   </Card>
   <Card title="Key frameworks" icon="sitemap">
     Fee/carry math, fund life cycles, and governance protections.
@@ -89,6 +89,15 @@ Venture funds connect **LP capital** with **GP decision-making**.
 GP incentives are shaped by fee income, carry, and fund life.
 </Callout>
 
+```mermaid
+flowchart LR
+  LPs[LPs: Provide capital] --> Fund[Fund pool]
+  Fund -->|Management fees| GPFee[GP management company]
+  Fund -->|Investments + exits| Proceeds[Exit proceeds]
+  Proceeds -->|Return of capital + distributions| LPDist[LPs]
+  Proceeds -->|Carry on profits| GPCarry[GPs]
+```
+
 <CardGroup>
   <Card title="Incentives" icon="bullseye">
     Fee and carry align GP behavior with performance.
@@ -118,6 +127,8 @@ GP incentives are shaped by fee income, carry, and fund life.
 
 ### Chapter 3: Investor vs. founder perspective
 
+Use this lens table to compare priorities by stakeholder so you can see where incentives align or diverge.
+
 | Dimension | Founder lens | GP lens | LP lens |
 | --- | --- | --- | --- |
 | Objectives | Capital and support | Portfolio returns | Risk-adjusted returns |
@@ -125,9 +136,13 @@ GP incentives are shaped by fee income, carry, and fund life.
 | Reporting | Updates | Portfolio management | Fund performance |
 | Risk | Single-company focus | Diversified bets | Portfolio allocation |
 
+**Takeaway:** LPs care most about fund-level risk-adjusted outcomes, while GPs balance portfolio construction and founders focus on company survival.
+
 ### Chapter 4: Worked example with numbers
 
 **Scenario:** \$100M fund, 2% fee, 20% carry, 10-year life.
+
+The table below shows how fees reduce investable capital and how carry is calculated after profits.
 
 | Item | Calculation | Result |
 | --- | --- | --- |
@@ -135,6 +150,19 @@ GP incentives are shaped by fee income, carry, and fund life.
 | Capital for investments | \$100M - \$20M | \$80M |
 | Gross fund return | 3× | \$300M |
 | Carry to GPs | 20% of profits (\$200M) | \$40M |
+
+**Takeaway:** Fees shrink capital available for deals, while carry compounds GP upside only after LPs are repaid.
+
+### Mini-exercise: LP diligence checklist
+
+Review a hypothetical GP pitch deck and answer:
+
+1. What is the fund’s target DPI, TVPI, and IRR, and how do they compare to prior funds?
+2. How much GP commitment is there, and who is providing it?
+3. What is the fee schedule over the fund life (including step-downs)?
+4. How concentrated is the portfolio strategy by stage, sector, and geography?
+5. What are the terms and governance rights granted to the LPAC?
+6. How are reserves for follow-on investments determined?
 
 ### Chapter 5: Summary checklist
 
@@ -246,46 +274,25 @@ GP incentives are shaped by fee income, carry, and fund life.
 
 ## Practice Questions
 
-**Question:** What is 2% management fee on a \$50M fund per year?  
-<details>
-<summary>Show answer</summary>
-
-**Answer:** \$1M per year.
-</details>
-
-**Question:** If a fund returns \$200M on a \$100M fund, what profit is subject to carry?  
-<details>
-<summary>Show answer</summary>
-
-**Answer:** \$100M profit.
-</details>
-
-**Question:** Why do GPs prefer exits before year 10?  
-<details>
-<summary>Show answer</summary>
-
-**Answer:** To return capital and show performance within fund life.
-</details>
-
-**Question:** What do LPs want besides high returns?  
-<details>
-<summary>Show answer</summary>
-
-**Answer:** Consistent reporting, risk management, and diversification.
-</details>
-
-**Question:** How does a larger fund affect deal size?  
-<details>
-<summary>Show answer</summary>
-
-**Answer:** It pushes larger checks and ownership targets.
-</details>
-
-**Question:** What is a clawback?  
-<details>
-<summary>Show answer</summary>
-
-**Answer:** A mechanism to return excess carry to LPs if later losses occur.
-</details>
+<AccordionGroup>
+  <Accordion title="What is 2% management fee on a $50M fund per year?">
+    **Answer:** \$1M per year.
+  </Accordion>
+  <Accordion title="If a fund returns $200M on a $100M fund, what profit is subject to carry?">
+    **Answer:** \$100M profit.
+  </Accordion>
+  <Accordion title="Why do GPs prefer exits before year 10?">
+    **Answer:** To return capital and show performance within fund life.
+  </Accordion>
+  <Accordion title="What do LPs want besides high returns?">
+    **Answer:** Consistent reporting, risk management, and diversification.
+  </Accordion>
+  <Accordion title="How does a larger fund affect deal size?">
+    **Answer:** It pushes larger checks and ownership targets.
+  </Accordion>
+  <Accordion title="What is a clawback?">
+    **Answer:** A mechanism to return excess carry to LPs if later losses occur.
+  </Accordion>
+</AccordionGroup>
 
 <ModuleNav previous="/textbook/modules/module-09" previousLabel="Module 9: Exit Strategies – IPOs, Acquisitions, and Secondaries" next="/textbook/modules/module-11" nextLabel="Module 11: Global Venture Capital Markets and Cross-Border Investing" />
