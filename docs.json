@@ -31,20 +31,20 @@
             ]
           },
           {
-            "group": "Weekly modules",
+            "group": "Modules",
             "pages": [
-              "textbook/modules/week-01",
-              "textbook/modules/week-02",
-              "textbook/modules/week-03",
-              "textbook/modules/week-04",
-              "textbook/modules/week-05",
-              "textbook/modules/week-06",
-              "textbook/modules/week-07",
-              "textbook/modules/week-08",
-              "textbook/modules/week-09",
-              "textbook/modules/week-10",
-              "textbook/modules/week-11",
-              "textbook/modules/week-12"
+              "textbook/modules/module-01",
+              "textbook/modules/module-02",
+              "textbook/modules/module-03",
+              "textbook/modules/module-04",
+              "textbook/modules/module-05",
+              "textbook/modules/module-06",
+              "textbook/modules/module-07",
+              "textbook/modules/module-08",
+              "textbook/modules/module-09",
+              "textbook/modules/module-10",
+              "textbook/modules/module-11",
+              "textbook/modules/module-12"
             ]
           }
         ]
@@ -58,8 +58,8 @@
   "navbar": {
     "primary": {
       "type": "button",
-      "label": "Start Week 1",
-      "href": "/textbook/modules/week-01"
+      "label": "Start Module 1",
+      "href": "/textbook/modules/module-01"
     }
   },
   "contextual": {
