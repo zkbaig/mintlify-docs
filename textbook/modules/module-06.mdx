@@ -72,8 +72,9 @@ Focus on the core venture finance decisions tied to **Module 6**: opportunity se
 - **Participating preferred:** Preference plus pro-rata participation (“double dip”).
 - **Anti-dilution:** Protection against down rounds (weighted average vs. full ratchet).
 - **Protective provisions:** Investor veto rights on major actions.
-- **No-shop clause:** Exclusivity during diligence (binding).
-- **Vesting/drag-along:** Founder retention and forced sale alignment.
+- **No-shop clause:** Exclusivity window that bars the company from soliciting other offers while diligence runs.
+- **Vesting:** Earned ownership over time to keep founders and key hires committed.
+- **Drag-along:** Majority holders can force minority holders to join an approved sale.
 
 ## Main Content
 
@@ -130,11 +131,36 @@ A “high valuation” can still be founder-unfriendly if control terms are stri
 
 **Scenario:** \$3M investment at \$9M pre, 1× participating preference.
 
+**Lead-in:** Use the table to compare how participating preferred “double dips” in a modest exit versus a non-participating alternative.
+
 | Exit Value | Investor Payout | Common Payout |
 | --- | --- | --- |
 | \$6M | \$3M (1×) | \$3M |
 | \$12M | \$3M + 25% of \$9M = \$5.25M | \$6.75M |
 | \$30M | \$3M + 25% of \$27M = \$9.75M | \$20.25M |
+
+**Takeaway:** Participation shifts more value away from common stock at mid-range exits, even when the headline valuation looks strong.
+
+```mermaid
+flowchart LR
+  A[Exit Proceeds] --> B{Preference Type}
+  B --> C[Non-participating]
+  B --> D[Participating]
+  C --> E[Investor chooses 1× pref or pro-rata]
+  C --> F[Remaining goes to common]
+  D --> G[Investor takes 1× pref]
+  D --> H[Then shares pro-rata in remaining pool]
+  D --> I[Common receives what is left]
+```
+
+<Callout type="info" title="Mini-exercise: Negotiate a trade-off">
+Pick one concession you would accept to improve liquidation terms, then explain why.
+
+- [ ] Lower valuation by 5–10% in exchange for 1× non-participating pref.
+- [ ] Grant a board observer seat instead of a voting seat.
+- [ ] Expand investor information rights but cap participation at 1×.
+- [ ] Accept a smaller option pool if the no-shop window is shortened.
+</Callout>
 
 ### Chapter 5: Summary checklist
 
@@ -221,12 +247,26 @@ A “high valuation” can still be founder-unfriendly if control terms are stri
   </Accordion>
 </AccordionGroup>
 
-- **What is a term sheet and is it binding?** Mostly non-binding except clauses like no-shop.
-- **Why include liquidation preferences?** Downside protection for investors.
-- **What is participating preferred?** Preference plus pro-rata participation (double dip).
-- **How does anti-dilution work?** Weighted average is mild; full ratchet is harsh.
-- **What control rights do investors gain?** Board seats, vetoes, information and pro rata rights.
-- **How do market cycles affect terms?** Downturns increase investor-friendly clauses.
+<AccordionGroup>
+  <Accordion title="What is a term sheet and is it binding?">
+    Mostly non-binding except clauses like no-shop.
+  </Accordion>
+  <Accordion title="Why include liquidation preferences?">
+    Downside protection for investors.
+  </Accordion>
+  <Accordion title="What is participating preferred?">
+    Preference plus pro-rata participation (double dip).
+  </Accordion>
+  <Accordion title="How does anti-dilution work?">
+    Weighted average is mild; full ratchet is harsh.
+  </Accordion>
+  <Accordion title="What control rights do investors gain?">
+    Board seats, vetoes, information and pro rata rights.
+  </Accordion>
+  <Accordion title="How do market cycles affect terms?">
+    Downturns increase investor-friendly clauses.
+  </Accordion>
+</AccordionGroup>
 
 ## Readings
 
