@@ -51,6 +51,7 @@ button,
   border: 1px solid var(--brand-border);
   background: linear-gradient(135deg, var(--brand-primary-soft), transparent 60%);
   box-shadow: var(--brand-shadow);
+  padding: 16px;
 }
 
 .callout .callout-title,
@@ -71,6 +72,7 @@ button,
   border: 1px solid var(--brand-border);
   background: linear-gradient(160deg, rgba(37, 99, 235, 0.08), transparent 70%);
   box-shadow: var(--brand-shadow);
+  padding: 16px;
 }
 
 .card:hover,
@@ -89,7 +91,7 @@ button,
   border-radius: 16px;
   border: 1px solid var(--brand-border);
   background: rgba(37, 99, 235, 0.04);
-  padding: 12px;
+  padding: 16px;
 }
 
 .steps .step,
@@ -110,7 +112,7 @@ button,
 [data-component='tabs'] {
   border-radius: 14px;
   border: 1px solid var(--brand-border);
-  padding: 8px;
+  padding: 16px;
   background: rgba(37, 99, 235, 0.04);
 }
 
@@ -128,12 +130,26 @@ button,
   box-shadow: var(--brand-shadow);
 }
 
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 14px;
+  border: 1px solid var(--brand-border);
+  box-shadow: var(--brand-shadow);
+  background: var(--brand-surface);
+}
+
+.table-wrapper table {
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
 table {
   border-collapse: separate;
   border-spacing: 0;
   border: 1px solid var(--brand-border);
   border-radius: 14px;
-  overflow: hidden;
+  width: 100%;
   box-shadow: var(--brand-shadow);
 }
 
@@ -151,6 +167,22 @@ th {
 
 tbody tr:hover {
   background: rgba(37, 99, 235, 0.06);
+}
+
+thead th:first-child {
+  border-top-left-radius: 12px;
+}
+
+thead th:last-child {
+  border-top-right-radius: 12px;
+}
+
+tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 12px;
+}
+
+tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 12px;
 }
 
 ul.contains-task-list {
