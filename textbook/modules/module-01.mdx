@@ -113,13 +113,17 @@ Capital sources are a ladder: each rung funds a milestone, not just a budget.
 
 ### Chapter 2: Frameworks and decision tools
 
+Use the funding lifecycle ladder to connect each stage to the milestone investors expect and the type of capital that fits. It keeps the conversation anchored in outcomes rather than just runway.
+
 <Tabs>
   <Tab title="Funding lifecycle ladder">
-    - **Pre-seed:** Problem validation and MVP
-    - **Seed:** Early traction and team build
-    - **Series A:** Repeatable growth engine
-    - **Series B/C:** Scale, global expansion
-    - **Exit:** Acquisition or IPO
+    | Stage | Milestone focus | Typical capital |
+    | --- | --- | --- |
+    | **Pre-seed** | Problem validation and MVP | Founders, friends/family, accelerators |
+    | **Seed** | Early traction and team build | Angels, seed funds |
+    | **Series A** | Repeatable growth engine | VC |
+    | **Series B/C** | Scale and global expansion | Growth VC |
+    | **Exit** | Acquisition or IPO | Strategic buyers, public markets |
   </Tab>
   <Tab title="Financing gap logic">
     - Banks require collateral and predictability.
@@ -127,6 +131,16 @@ Capital sources are a ladder: each rung funds a milestone, not just a budget.
     - Equity investors demand **high growth and governance rights**.
   </Tab>
 </Tabs>
+
+**Takeaway:** The ladder helps you match the next milestone to the most realistic capital source instead of defaulting to VC.
+
+```mermaid
+flowchart LR
+  PreSeed[Pre-seed<br/>Problem validation & MVP] --> Seed[Seed<br/>Early traction & team build]
+  Seed --> SeriesA[Series A<br/>Repeatable growth engine]
+  SeriesA --> SeriesBC[Series B/C<br/>Scale & expansion]
+  SeriesBC --> Exit[Exit<br/>Acquisition or IPO]
+```
 
 ### Chapter 3: Investor vs. founder perspective
 
@@ -141,10 +155,24 @@ Capital sources are a ladder: each rung funds a milestone, not just a budget.
 
 **Scenario:** A software-as-a-service (SaaS) startup plans a two-step funding path to reach \$1M ARR.
 
+The table below shows the minimum capital and milestone sequencing needed to unlock the next round.
+
 | Stage | Amount | Instrument | Post-money | Milestone |
 | --- | --- | --- | --- | --- |
 | Pre-seed | \$300k | SAFE | \$3.0M | MVP and 20 pilot customers |
 | Seed | \$1.2M | Equity | \$6.0M | \$50k MRR, 4% churn |
+
+**Takeaway:** Funding path decisions should be milestone-driven—each round should unlock a measurable step toward repeatable growth.
+
+```mermaid
+flowchart TD
+  Start[Define next milestone] --> Traction{Do you have early traction?}
+  Traction -- "No" --> PreSeed[Pre-seed/accelerator<br/>Build MVP + pilots]
+  Traction -- "Yes" --> Revenue{Is revenue repeatable?}
+  Revenue -- "No" --> Seed[Seed/angels<br/>Prove sales motion]
+  Revenue -- "Yes" --> SeriesA[Series A<br/>Scale growth engine]
+  SeriesA --> Exit[Plan for Series B/C or exit]
+```
 
 **Cap table snapshot after Seed (simplified)**
 
@@ -186,8 +214,8 @@ Capital sources are a ladder: each rung funds a milestone, not just a budget.
 - **Step 2 — Brainstorm sources:** Map possible sources (personal funds/FFF, angels, VC, loans, crowdfunding, grants) that fit the scenario.
 - **Step 3 — Choose a funding path:** Decide on a 1–2 year strategy with timing, amount, and rationale (e.g., bootstrap → angel; accelerator → seed VC).
 - **Step 4 — Prepare to present:** Summarize the plan, funding amount, and 2–3 reasons it fits the venture.
-- **Presentations:** Each group gives a 3-minute informal pitch; the instructor prompts trade-off thinking.
-- **Expected output:** A comparative list of scenarios vs. funding paths to reinforce “right money at the right time.”
+- **Presentations:** Each group gives a 3-minute pitch; the instructor prompts trade-off thinking.
+- **Expected output:** A comparative list of scenarios vs. funding paths to reinforce appropriate capital at the appropriate time.
 
 ### Case study: GreenRidge Brewing Co. — A funding dilemma
 
@@ -273,6 +301,23 @@ Capital sources are a ladder: each rung funds a milestone, not just a budget.
   </Tab>
 </Tabs>
 
+### Mini-exercise: VC fit checklist
+
+Score each item from **0–2** (0 = not true, 1 = partially true, 2 = clearly true). Add your total and compare it to the rubric.
+
+- Total addressable market supports \$100M+ potential revenue.
+- Product scales with low marginal cost and repeatable distribution.
+- Clear 5–7 year path to a large exit (acquisition or IPO).
+- Team has the technical and commercial talent to scale quickly.
+- Early traction or demand signals validate the market.
+- Business can tolerate governance and dilution trade-offs.
+
+| Total score | Interpretation |
+| --- | --- |
+| 0–4 | Low VC fit: pursue bootstrapping, angels, or non-dilutive capital. |
+| 5–8 | Mixed fit: consider staged funding or alternative capital. |
+| 9–12 | Strong VC fit: prepare for VC diligence and milestone planning. |
+
 <AccordionGroup>
   <Accordion title="Funding stage match">
     **Question:** Which capital source is the best fit for a prototype with no revenue but strong mentor needs?  
@@ -288,12 +333,26 @@ Capital sources are a ladder: each rung funds a milestone, not just a budget.
   </Accordion>
 </AccordionGroup>
 
-- **What makes financing a startup different from financing an established company?** Startups face extreme uncertainty, lack operating history, and rely on equity investors who accept risk and provide mentorship.
-- **What are the primary sources of funding for new ventures?** Founder savings, friends/family, angels, accelerators, venture capital, strategic partners, loans or government programs, and crowdfunding.
-- **How common is VC funding among startups?** Extremely rare—around 0.05% of startups receive VC.
-- **What is the typical funding lifecycle of a high-growth startup?** Pre-seed/seed → Series A → Series B/C → exit (IPO or acquisition), with milestones driving each round.
-- **How does Canada’s startup financing landscape compare to the U.S.?** Canada is smaller but has stronger government involvement and more non-dilutive funding; the U.S. has larger private VC pools.
-- **Why might a founder avoid VC?** To retain ownership/control, grow sustainably, avoid aggressive exit timelines, or align with a mission-driven strategy.
+<AccordionGroup>
+  <Accordion title="What makes financing a startup different from financing an established company?">
+    Startups face extreme uncertainty, lack operating history, and rely on equity investors who accept risk and provide mentorship.
+  </Accordion>
+  <Accordion title="What are the primary sources of funding for new ventures?">
+    Founder savings, friends/family, angels, accelerators, venture capital, strategic partners, loans or government programs, and crowdfunding.
+  </Accordion>
+  <Accordion title="How common is VC funding among startups?">
+    Extremely rare—around 0.05% of startups receive VC.
+  </Accordion>
+  <Accordion title="What is the typical funding lifecycle of a high-growth startup?">
+    Pre-seed/seed → Series A → Series B/C → exit (IPO or acquisition), with milestones driving each round.
+  </Accordion>
+  <Accordion title="How does Canada’s startup financing landscape compare to the U.S.?">
+    Canada is smaller but has stronger government involvement and more non-dilutive funding; the U.S. has larger private VC pools.
+  </Accordion>
+  <Accordion title="Why might a founder avoid VC?">
+    To retain ownership/control, grow sustainably, avoid aggressive exit timelines, or align with a mission-driven strategy.
+  </Accordion>
+</AccordionGroup>
 
 ## Readings
 
@@ -317,46 +376,25 @@ Capital sources are a ladder: each rung funds a milestone, not just a budget.
 
 ## Practice Questions
 
-**Question:** Which capital source best fits a prototype with no revenue but strong mentor needs?  
-<details>
-<summary>Show answer</summary>
-
-**Answer:** Angels or accelerators; they provide mentorship plus equity capital.
-</details>
-
-**Question:** Why do banks avoid early-stage startups?  
-<details>
-<summary>Show answer</summary>
-
-**Answer:** No collateral and unpredictable cash flows make debt risk too high.
-</details>
-
-**Question:** If a VC invests \$2M for 20% and needs a 10× return, what exit value is required?  
-<details>
-<summary>Show answer</summary>
-
-**Answer:** \$100M (VC needs \$20M; \$20M ÷ 20%).
-</details>
-
-**Question:** Name one reason a founder avoids VC.  
-<details>
-<summary>Show answer</summary>
-
-**Answer:** To preserve control and avoid aggressive exit timelines.
-</details>
-
-**Question:** What is the primary milestone for Series A?  
-<details>
-<summary>Show answer</summary>
-
-**Answer:** A repeatable growth engine (e.g., proven CAC/LTV and retention).
-</details>
-
-**Question:** When is non-dilutive funding a good fit?  
-<details>
-<summary>Show answer</summary>
-
-**Answer:** When revenue exists and the venture can handle repayment or reporting requirements.
-</details>
+<AccordionGroup>
+  <Accordion title="Which capital source best fits a prototype with no revenue but strong mentor needs?">
+    Angels or accelerators; they provide mentorship plus equity capital.
+  </Accordion>
+  <Accordion title="Why do banks avoid early-stage startups?">
+    No collateral and unpredictable cash flows make debt risk too high.
+  </Accordion>
+  <Accordion title="If a VC invests \$2M for 20% and needs a 10× return, what exit value is required?">
+    \$100M (VC needs \$20M; \$20M ÷ 20%).
+  </Accordion>
+  <Accordion title="Name one reason a founder avoids VC.">
+    To preserve control and avoid aggressive exit timelines.
+  </Accordion>
+  <Accordion title="What is the primary milestone for Series A?">
+    A repeatable growth engine (e.g., proven CAC/LTV and retention).
+  </Accordion>
+  <Accordion title="When is non-dilutive funding a good fit?">
+    When revenue exists and the venture can handle repayment or reporting requirements.
+  </Accordion>
+</AccordionGroup>
 
 <ModuleNav next="/textbook/modules/module-02" nextLabel="Module 2: Evaluating Venture Opportunities and Business Planning" />
