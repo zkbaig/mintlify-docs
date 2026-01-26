@@ -53,7 +53,7 @@ Focus on the core venture finance decisions tied to **Module 7**: opportunity se
 
 <Callout type="success" title="Learning Objectives">
 - Explain how cap tables track ownership and dilution over time.
-- Compute dilution from new rounds, option pools, and Simple Agreement for Future Equity (SAFE) conversions.
+- Compute dilution from new rounds and option pools.
 - Interpret fully diluted ownership and pro forma cap tables.
 - Model control implications from ownership and voting rights.
 - Use cap table tools and scenario modeling to prevent surprises.
@@ -124,12 +124,18 @@ If new capital increases enterprise value faster than ownership falls, founders 
 
 **Scenario:** Seed and Series A with a 15% option pool.
 
+Use the round-by-round table to translate valuation and new money into dilution checkpoints for founders and new investors.
+
 | Round | Pre-money | New Money | Post-money | Founder % (fully diluted) |
 | --- | --- | --- | --- | --- |
 | Seed | \$6M | \$2M | \$8M | 65% |
 | Series A | \$18M | \$6M | \$24M | 45% |
 
+**Takeaway:** Each round compresses founder ownership; the size of the new check and the pre-money valuation jointly determine the drop.
+
 **Cap table after Series A (simplified)**
+
+The cap table below converts the round math into a clean ownership snapshot you can sanity-check with stakeholders.
 
 | Holder | Ownership |
 | --- | --- |
@@ -137,6 +143,18 @@ If new capital increases enterprise value faster than ownership falls, founders 
 | Seed investors | 20% |
 | Series A investors | 25% |
 | Option pool (unallocated) | 10% |
+
+**Takeaway:** A simplified cap table is a communication tool—use it to align on who owns what before moving on to preferences and control rights.
+
+**Dilution timeline (founder ownership)**
+
+| Round | Founder ownership | Visual |
+| --- | --- | --- |
+| Founding | 100% | ██████████ 100% |
+| Seed | 65% | ███████░░░ 65% |
+| Series A | 45% | █████░░░░░ 45% |
+
+Use the timeline as a quick gut check before you finalize a more detailed model with actual share counts.
 
 ### Chapter 5: Summary checklist
 
@@ -177,6 +195,23 @@ If new capital increases enterprise value faster than ownership falls, founders 
 - **Series A:** \$3M on \$15M pre; pool topped to 10% post; Series A VC ~20%.
 - **Series B dilemma:** \$10M on \$40M pre with another pool refresh; founders risk falling below 40%.
 - **Trade-offs:** Raise less to reduce dilution vs. raise more to hit milestones faster.
+
+### Mini-exercise: Model a Series A with option pool refresh
+
+Use the inputs below to build a quick pro forma cap table.
+
+| Input | Value |
+| --- | --- |
+| Current fully diluted shares | 10,000,000 |
+| Current ownership | Founders 65%, Seed investors 25%, Option pool 10% |
+| Series A pre-money valuation | \$18M |
+| Series A new money | \$6M |
+| Target post-money option pool | 15% |
+
+**Your tasks**
+- Calculate the Series A price per share.
+- Determine how many new shares the Series A investors receive.
+- Refresh the option pool to 15% post-money and compute the new ownership percentages.
 
 ### Discussion prompts and teaching notes
 
@@ -226,12 +261,41 @@ If new capital increases enterprise value faster than ownership falls, founders 
   </Accordion>
 </AccordionGroup>
 
-- **What is a cap table and why is it important?** Tracks ownership, dilution, and voting control.
-- **How does a financing round dilute shareholders?** New shares increase total count, reducing %.
-- **What does fully diluted mean?** Assumes all options and convertibles are exercised.
-- **How do option pools affect ownership?** Pre-money pools dilute founders before new money.
-- **Why model future rounds?** To anticipate dilution and plan fundraising strategy.
-- **What happens on exit?** Cap table plus preferences determine payouts via a waterfall.
+<details>
+<summary>What is a cap table and why is it important?</summary>
+
+Tracks ownership, dilution, and voting control.
+</details>
+
+<details>
+<summary>How does a financing round dilute shareholders?</summary>
+
+New shares increase total count, reducing %.
+</details>
+
+<details>
+<summary>What does fully diluted mean?</summary>
+
+Assumes all options and convertibles are exercised.
+</details>
+
+<details>
+<summary>How do option pools affect ownership?</summary>
+
+Pre-money pools dilute founders before new money.
+</details>
+
+<details>
+<summary>Why model future rounds?</summary>
+
+To anticipate dilution and plan fundraising strategy.
+</details>
+
+<details>
+<summary>What happens on exit?</summary>
+
+Cap table plus preferences determine payouts via a waterfall.
+</details>
 
 ## Readings
 
