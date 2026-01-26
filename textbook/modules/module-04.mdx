@@ -73,7 +73,8 @@ Focus on the core venture finance decisions tied to **Module 4**: opportunity se
 - **Cap table:** Ownership ledger across founders, investors, and option pools.
 - **Option pool:** Reserved equity for employees, often created pre-money.
 - **Comparable multiples:** Market-based benchmarks (revenue, earnings before interest, taxes, depreciation, and amortization (EBITDA), users).
-- **Simple Agreement for Future Equity (SAFE)/convertible notes:** Deferred valuation instruments with caps/discounts.
+- **Simple Agreement for Future Equity (SAFE):** Contract that converts into equity at a future priced round, typically with a valuation cap and/or discount instead of interest or maturity.
+- **Convertible notes:** Short-term debt that converts into equity at a future round, usually carrying interest and a maturity date plus a cap/discount.
 - **Unicorn:** Startup valued at \$1B+.
 - **Annual recurring revenue (ARR):** Annualized subscription revenue run rate.
 
@@ -131,6 +132,8 @@ Every valuation choice changes who owns what and who controls the board.
 
 **Scenario:** \$2M seed on \$6M pre-money with a 10% post-money option pool.
 
+The cap table below shows **post-money ownership** after the seed round closes. Use it to see how the option pool and new money change founder percentages.
+
 | Holder | Ownership (post) |
 | --- | --- |
 | Founders | 65% |
@@ -138,6 +141,14 @@ Every valuation choice changes who owns what and who controls the board.
 | Seed investors | 25% |
 
 **Post-money:** \$8M. Investor ownership = \$2M ÷ \$8M = 25%.
+
+**Key takeaway:** Even with a healthy pre-money, adding a post-money option pool and new capital compresses founder ownership quickly, so founders should model dilution before agreeing to pool size or pricing.
+
+```mermaid
+flowchart LR
+  A[Pre-money<br/>Founders 100%] --> B[Add option pool<br/>Founders 90% | Pool 10%]
+  B --> C[Add $2M seed<br/>Founders 65% | Pool 10% | Investors 25%]
+```
 
 ### Chapter 5: Summary checklist
 
@@ -232,12 +243,38 @@ Every valuation choice changes who owns what and who controls the board.
   </Accordion>
 </AccordionGroup>
 
-- **What is the VC method and when is it used?** Back-solves valuation from exit value and target return for early-stage companies.
-- **Why is DCF less practical for startups?** High uncertainty and discount rates make outputs unreliable.
-- **How do comparables work?** Apply market multiples and adjust for growth, risk, and stage.
-- **How do pre- and post-money valuations relate to ownership?** Investor % = investment/post-money.
-- **What is an option pool and who it dilutes?** Reserved equity, typically diluting founders pre-money.
-- **How do ownership percentages shift across rounds?** Founders and early investors dilute as new money enters, ideally for a larger valuation.
+### Mini-exercise: Build a 3-line cap table
+
+**Inputs**
+- Pre-money valuation: \$6M
+- New investment: \$2M
+- Post-money option pool target: 10%
+
+**Expected outputs**
+- Post-money valuation: \$8M
+- Investor ownership: 25%
+- Founders ownership (after pool): 65%
+
+<AccordionGroup>
+  <Accordion title="What is the VC method and when is it used?">
+    Back-solves valuation from exit value and target return for early-stage companies.
+  </Accordion>
+  <Accordion title="Why is DCF less practical for startups?">
+    High uncertainty and discount rates make outputs unreliable.
+  </Accordion>
+  <Accordion title="How do comparables work?">
+    Apply market multiples and adjust for growth, risk, and stage.
+  </Accordion>
+  <Accordion title="How do pre- and post-money valuations relate to ownership?">
+    Investor % = investment/post-money.
+  </Accordion>
+  <Accordion title="What is an option pool and who it dilutes?">
+    Reserved equity, typically diluting founders pre-money.
+  </Accordion>
+  <Accordion title="How do ownership percentages shift across rounds?">
+    Founders and early investors dilute as new money enters, ideally for a larger valuation.
+  </Accordion>
+</AccordionGroup>
 
 ## Readings
 
