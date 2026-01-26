@@ -71,8 +71,8 @@ Focus on the core venture finance decisions tied to **Module 5**: opportunity se
 - **Terminal value:** Forecast exit value used in VC method.
 - **Discount rate:** Risk-adjusted rate used to discount future value (often 30–60% for VC).
 - **Berkus Method:** Heuristic valuation assigning value to idea, prototype, team, etc.
-- **Down round:** New round priced below the prior valuation.
-- **Anti-dilution:** Terms that protect earlier investors in down rounds.
+- **Down round:** A funding round priced below the prior round, lowering the company’s paper value and signaling tougher conditions.
+- **Anti-dilution:** Contract terms that adjust earlier investors’ ownership or conversion price if a later round is priced lower.
 - **Pre-money vs. post-money:** Determines ownership percentages after investment.
 - **Annual recurring revenue (ARR):** Annualized subscription revenue run rate.
 - **Software-as-a-service (SaaS):** Subscription software delivered over the internet.
@@ -134,6 +134,8 @@ No single method is “right”; use multiple methods to bracket a range.
 
 **Scenario:** \$1M ARR SaaS with 100% YoY growth.
 
+Use the comparison below to see how the same company can yield different values depending on assumptions and method choice.
+
 | Method | Assumption | Value |
 | --- | --- | --- |
 | Comps | 6× ARR | \$6M |
@@ -141,6 +143,30 @@ No single method is “right”; use multiple methods to bracket a range.
 | DCF | \$1.5M FCF by Year 5, 40% discount | ~\$5M |
 
 **Range:** \$5M–\$7M post-money before term adjustments.
+
+If the outputs are far apart, revisit growth, margins, and exit assumptions until the range is defensible.
+
+<figure>
+  <svg role="img" aria-label="Valuation triangulation diagram showing DCF, comps, and VC method converging on a shared range." width="640" height="220" viewBox="0 0 640 220" xmlns="http://www.w3.org/2000/svg">
+    <rect width="640" height="220" fill="#ffffff" />
+    <g font-family="Inter, Arial, sans-serif" font-size="16" fill="#0f172a">
+      <rect x="30" y="30" width="140" height="50" rx="10" fill="#e2e8f0" />
+      <text x="100" y="61" text-anchor="middle" font-weight="600">DCF</text>
+      <rect x="250" y="30" width="140" height="50" rx="10" fill="#e2e8f0" />
+      <text x="320" y="61" text-anchor="middle" font-weight="600">Comps</text>
+      <rect x="470" y="30" width="140" height="50" rx="10" fill="#e2e8f0" />
+      <text x="540" y="61" text-anchor="middle" font-weight="600">VC Method</text>
+      <rect x="220" y="140" width="200" height="55" rx="12" fill="#cbd5f5" />
+      <text x="320" y="173" text-anchor="middle" font-weight="700">Shared Value Range</text>
+    </g>
+    <g stroke="#475569" stroke-width="2" fill="none">
+      <path d="M100 80 L260 140" />
+      <path d="M320 80 L320 140" />
+      <path d="M540 80 L380 140" />
+    </g>
+  </svg>
+  <figcaption>Valuation triangulation: three methods converge on a defensible range.</figcaption>
+</figure>
 
 ### Chapter 5: Summary checklist
 
@@ -184,6 +210,22 @@ No single method is “right”; use multiple methods to bracket a range.
 - **Term Sheet B:** \$15M post-money for \$2M (13.3% equity) but with milestone-triggered anti-dilution.
 - **Founder dilemma:** Lower valuation with clean terms vs. higher valuation with punitive conditions.
 - **Context:** Founders expected ~\$20M based on hype; must evaluate realistic valuation and partner fit.
+
+### Mini-exercise: Choosing between two valuation ranges
+
+**Scenario:** You receive two term sheets for the same company.
+
+- **Range A:** \$8M–\$10M post-money with simple 1× non-participating liquidation preference.
+- **Range B:** \$12M–\$14M post-money with a 1.5× participating preference and a broad-based anti-dilution clause.
+
+**Your task:** Pick the range you would accept and justify it using the checklist below.
+
+**Decision rationale checklist**
+- [ ] Does the higher range come with terms that reduce real ownership or exit proceeds?
+- [ ] Is the valuation range supported by the triangulated methods (DCF, comps, VC)?
+- [ ] How likely is a down round if the range is at the high end?
+- [ ] Do the investor terms constrain future fundraising or hiring?
+- [ ] Which range better aligns with credible milestones over the next 12–18 months?
 
 ### Discussion prompts and teaching notes
 
@@ -234,12 +276,26 @@ No single method is “right”; use multiple methods to bracket a range.
   </Accordion>
 </AccordionGroup>
 
-- **What methods are commonly used to value startups?** DCF, comparables, and the VC method.
-- **Why do VCs demand 10×+ returns?** Portfolio failure rates require a few outsized wins.
-- **How do pre- and post-money valuations relate?** Post-money = pre + investment; ownership = investment/post.
-- **What qualitative factors influence valuation?** Team, market size, technology, and traction.
-- **How do market conditions shift valuation?** Booms inflate; downturns tighten and lead to flat/down rounds.
-- **What is a down round and why avoid it?** Lower valuation later round; harms morale and triggers anti-dilution.
+<AccordionGroup>
+  <Accordion title="Methods used to value startups">
+    **Answer:** DCF, comparables, and the VC method.
+  </Accordion>
+  <Accordion title="Why VCs demand 10×+ returns">
+    **Answer:** Portfolio failure rates require a few outsized wins.
+  </Accordion>
+  <Accordion title="How pre- and post-money valuations relate">
+    **Answer:** Post-money = pre + investment; ownership = investment/post.
+  </Accordion>
+  <Accordion title="Qualitative factors that influence valuation">
+    **Answer:** Team, market size, technology, and traction.
+  </Accordion>
+  <Accordion title="How market conditions shift valuation">
+    **Answer:** Booms inflate; downturns tighten and lead to flat/down rounds.
+  </Accordion>
+  <Accordion title="Down rounds and why to avoid them">
+    **Answer:** Later rounds priced lower reduce paper value and can trigger anti-dilution protections.
+  </Accordion>
+</AccordionGroup>
 
 ## Readings
 
