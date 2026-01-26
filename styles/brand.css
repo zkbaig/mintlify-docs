@@ -145,9 +145,33 @@ thead th {
 
 td,
 th {
+  padding: 12px 16px;
   border-bottom: 1px solid var(--brand-border);
 }
 
 tbody tr:hover {
   background: rgba(22, 163, 74, 0.06);
+}
+
+ul.contains-task-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+li.task-list-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 8px 0;
+  border-bottom: 1px dashed var(--brand-border);
+}
+
+li.task-list-item:last-child {
+  border-bottom: none;
+}
+
+li.task-list-item input[type='checkbox'] {
+  margin-top: 4px;
+  accent-color: var(--brand-primary);
 }
