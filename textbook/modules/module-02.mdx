@@ -110,6 +110,7 @@ Investors scan for a large market and a team that can execute; everything else i
 
 <Tabs>
   <Tab title="Venture Evaluation Matrix">
+    Use the matrix as a quick diagnostic: score each factor, then highlight the weakest two for immediate follow-up.
     | Factor | 1–5 Score | Evidence |
     | --- | --- | --- |
     | Need |  | Customer interviews, churn |
@@ -118,6 +119,7 @@ Investors scan for a large market and a team that can execute; everything else i
     | Market |  | TAM/SAM/SOM sizing |
     | Competition |  | Differentiation proof |
     | Traction |  | Pilots, LOIs, revenue |
+    Close by writing one sentence on the evidence you still need to move each low score up one point.
   </Tab>
   <Tab title="Lean vs. full plan">
     - **Lean pitch:** Fast learning, early traction, short deck.
@@ -144,6 +146,23 @@ Investors scan for a large market and a team that can execute; everything else i
 | SAM | 20% smart-home adopters | \$1.5B |
 | SOM (3 yrs) | 3% of SAM | \$45M |
 
+```mermaid
+flowchart TB
+  TAM["TAM (Total Addressable Market):\nAll households that could buy"] --> SAM["SAM (Serviceable Available Market):\nSmart-home adopters you can reach"]
+  SAM --> SOM["SOM (Serviceable Obtainable Market):\nShare you can win in 3 years"]
+```
+
+**TAM/SAM/SOM example with assumptions**
+
+If you’re building a campus delivery app, define **TAM (Total Addressable Market)** as all university students who could order delivery, **SAM (Serviceable Available Market)** as students within campuses you can operate in, and **SOM (Serviceable Obtainable Market)** as the share you can realistically capture in the first 24–36 months.
+
+**Assumption checklist**
+- [ ] Count of universities included and average enrollment per campus.
+- [ ] Percentage of students who order delivery at least monthly.
+- [ ] Average order value and frequency per student.
+- [ ] Initial market share target by end of Year 3.
+- [ ] Constraints (delivery radius, hours, local regulations).
+
 **Unit economics snapshot**
 
 | Metric | Value |
@@ -153,6 +172,21 @@ Investors scan for a large market and a team that can execute; everything else i
 | Gross margin | \$90 (60%) |
 | CAC | \$40 |
 | Payback | &lt;2 months |
+
+Use the snapshot to explain whether the business scales profitably and what levers improve payback time.
+
+### Mini-exercise: Red flag detector
+
+Spot the red flags, then write one follow-up question you would ask the founder.
+
+- **Market mismatch:** TAM looks big, but the SAM is tiny or undefined.  
+  *Prompt:* “Which specific segment are you targeting first, and why?”
+- **Team gap:** No one owns sales/operations for a go-to-market-heavy business.  
+  *Prompt:* “Who will lead distribution or partnerships in the next six months?”
+- **Unit economics fog:** CAC and margin assumptions are missing or implausible.  
+  *Prompt:* “What data supports your CAC and gross margin estimates?”
+- **Traction ambiguity:** Vanity metrics replace customer retention or revenue.  
+  *Prompt:* “What’s your 30/90-day retention and how does it trend?”
 
 ### Chapter 5: Summary checklist
 
