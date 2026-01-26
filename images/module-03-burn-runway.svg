@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" role="img" aria-labelledby="title desc">
+  <title id="title">Burn and runway trend over 12 months</title>
+  <desc id="desc">Line chart showing burn decreasing and runway extending across 12 months.</desc>
+  <rect width="640" height="320" fill="#ffffff" />
+  <g stroke="#d1d5db" stroke-width="1">
+    <line x1="70" y1="40" x2="70" y2="270" />
+    <line x1="70" y1="270" x2="600" y2="270" />
+    <line x1="70" y1="210" x2="600" y2="210" />
+    <line x1="70" y1="150" x2="600" y2="150" />
+    <line x1="70" y1="90" x2="600" y2="90" />
+  </g>
+  <g fill="#111827" font-family="Arial, sans-serif" font-size="12">
+    <text x="30" y="273">0</text>
+    <text x="20" y="213">20</text>
+    <text x="20" y="153">40</text>
+    <text x="20" y="93">60</text>
+    <text x="300" y="300">Months</text>
+    <text x="110" y="285">1</text>
+    <text x="250" y="285">4</text>
+    <text x="390" y="285">8</text>
+    <text x="530" y="285">12</text>
+  </g>
+  <g fill="none" stroke-width="3">
+    <polyline stroke="#ef4444" points="90,110 200,130 340,165 460,195 580,220" />
+    <polyline stroke="#2563eb" points="90,230 200,210 340,185 460,155 580,120" />
+  </g>
+  <g fill="#111827" font-family="Arial, sans-serif" font-size="12">
+    <text x="410" y="110" fill="#ef4444">Net burn ($k)</text>
+    <text x="410" y="135" fill="#2563eb">Runway (months)</text>
+  </g>
+</svg>

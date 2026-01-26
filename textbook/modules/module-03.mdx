@@ -56,7 +56,7 @@ Focus on the core venture finance decisions tied to **Module 3**: opportunity se
 - Explain burn rate, runway, and how they tie to milestone-based fundraising.
 - Evaluate unit economics using CAC, LTV, margin, and related metrics.
 - Identify common projection pitfalls and how to stress-test assumptions.
-- Use software-as-a-service (SaaS) and product metrics (MRR, churn, average revenue per user (ARPU)) to assess health.
+  - Use software-as-a-service (SaaS) and product metrics (MRR, churn, average revenue per user (ARPU)) to assess health.
 </Callout>
 
 ## Module Tasks
@@ -73,7 +73,7 @@ Focus on the core venture finance decisions tied to **Module 3**: opportunity se
 - **Unit economics:** Revenue and cost per customer/unit, including margin and CAC/LTV.
 - **CAC (Customer Acquisition Cost):** Cost to acquire a customer.
 - **LTV (Lifetime Value):** Net revenue from a customer over time.
-- **MRR:** Monthly recurring revenue for subscription businesses.
+- **MRR (Monthly Recurring Revenue):** Recurring subscription revenue per month.
 - **Churn:** Percentage of customers or revenue lost over a period.
 - **Scenario analysis:** Base, upside, and downside forecasting to stress uncertainty.
 - **Software-as-a-service (SaaS):** Subscription software delivered over the internet.
@@ -126,6 +126,10 @@ A profitable income statement can still hide a cash crisis.
   </Tab>
 </Tabs>
 
+<Callout type="info" title="Driver-based model visual">
+  <img src="/images/module-03-driver-model.svg" alt="Diagram showing revenue, cost, and working capital drivers feeding financial statements and burn/runway." />
+</Callout>
+
 ### Chapter 3: Investor vs. founder perspective
 
 | Dimension | Founder lens | Investor lens | Implication |
@@ -139,6 +143,8 @@ A profitable income statement can still hide a cash crisis.
 
 **Scenario:** 12-month plan for a B2B SaaS startup.
 
+Lead-in: use this mini table to connect **MRR (Monthly Recurring Revenue)** growth to burn trends before you model the full cash runway.
+
 | Month | MRR | COGS (20%) | Opex | Net Burn |
 | --- | --- | --- | --- | --- |
 | 1 | \$10k | \$2k | \$60k | -\$52k |
@@ -146,6 +152,12 @@ A profitable income statement can still hide a cash crisis.
 | 12 | \$90k | \$18k | \$95k | -\$23k |
 
 **Runway check:** \$900k cash ÷ \$50k avg burn ≈ **18 months**.
+
+Takeaway: even modest MRR gains can materially lengthen runway when fixed costs stay flat.
+
+<Callout type="info" title="Burn and runway trend">
+  <img src="/images/module-03-burn-runway.svg" alt="Line chart illustrating net burn declining and runway extending across months 1 to 12." />
+</Callout>
 
 ### Chapter 5: Summary checklist
 
@@ -211,6 +223,8 @@ A mobile app startup has **\$200k** cash, **\$30k** monthly expenses, and **\$10
 
 #### Current financials
 
+Lead-in: these snapshots establish the baseline MRR and burn story you will stress-test in the growth plan.
+
 - **Revenue:** ~\$30k/month (subscriptions and referral commissions).
 - **Expenses:** ~\$80k/month (payroll, servers, marketing, overhead).
 - **Net burn:** ~\$50k/month with **~\$500k cash** remaining (~10 months of runway).
@@ -233,6 +247,8 @@ A mobile app startup has **\$200k** cash, **\$30k** monthly expenses, and **\$10
 - **Premium LTV:** ~\$100–\$150 (2–3 year lifetime estimate).
 - **Conversion:** 5% now, target 8%; LTV:CAC for premium users ~3:1.
 - **Burn multiple:** Improves from ~5:1 early to ~1:1 by year-end if growth holds.
+
+Takeaway: the story only works if CAC discipline holds and conversion lift offsets the higher burn required to scale.
 
 #### Investor perspective
 
@@ -290,6 +306,15 @@ A mobile app startup has **\$200k** cash, **\$30k** monthly expenses, and **\$10
   </Tab>
 </Tabs>
 
+### Mini-exercise: Sensitivity pivot
+
+Pick one pivot (churn or CAC) and estimate how runway changes.
+
+1. **Baseline:** Assume 12 months of runway at today’s burn.
+2. **Pivot 1 (churn):** Double churn (e.g., 4% → 8%) and reduce MRR growth by 30%. Estimate the new burn and runway.
+3. **Pivot 2 (CAC):** Increase CAC by 50% and add the incremental monthly spend to operating expenses. Estimate runway again.
+4. **Decision:** Which pivot is more damaging, and what single driver would you change first?
+
 <AccordionGroup>
   <Accordion title="Burn vs. runway">
     **Question:** A startup has \$300k cash and burns \$25k/month. What is runway?  
@@ -343,46 +368,25 @@ $$
 
 ## Practice Questions
 
-**Question:** If monthly expenses are \$80k and gross margin is \$20k, what is burn?  
-<details>
-<summary>Show answer</summary>
-
-**Answer:** \$60k per month.
-</details>
-
-**Question:** With \$720k in cash and \$60k burn, how many months of runway?  
-<details>
-<summary>Show answer</summary>
-
-**Answer:** 12 months.
-</details>
-
-**Question:** Name two revenue drivers in SaaS.  
-<details>
-<summary>Show answer</summary>
-
-**Answer:** Price per seat and active seats (or conversion rate).
-</details>
-
-**Question:** Why can a company with positive net income still run out of cash?  
-<details>
-<summary>Show answer</summary>
-
-**Answer:** Slow collections, inventory buildup, or upfront expenses.
-</details>
-
-**Question:** If churn rises from 4% to 8%, what happens to MRR?  
-<details>
-<summary>Show answer</summary>
-
-**Answer:** MRR growth slows or declines; runway shortens.
-</details>
-
-**Question:** What is a common milestone for a seed round?  
-<details>
-<summary>Show answer</summary>
-
-**Answer:** Proof of product-market fit (e.g., retention and paid growth).
-</details>
+<AccordionGroup>
+  <Accordion title="If monthly expenses are $80k and gross margin is $20k, what is burn?">
+    **Answer:** \$60k per month.
+  </Accordion>
+  <Accordion title="With $720k in cash and $60k burn, how many months of runway?">
+    **Answer:** 12 months.
+  </Accordion>
+  <Accordion title="Name two revenue drivers in SaaS.">
+    **Answer:** Price per seat and active seats (or conversion rate).
+  </Accordion>
+  <Accordion title="Why can a company with positive net income still run out of cash?">
+    **Answer:** Slow collections, inventory buildup, or upfront expenses.
+  </Accordion>
+  <Accordion title="If churn rises from 4% to 8%, what happens to MRR?">
+    **Answer:** MRR growth slows or declines; runway shortens.
+  </Accordion>
+  <Accordion title="What is a common milestone for a seed round?">
+    **Answer:** Proof of product-market fit (e.g., retention and paid growth).
+  </Accordion>
+</AccordionGroup>
 
 <ModuleNav previous="/textbook/modules/module-02" previousLabel="Module 2: Evaluating Venture Opportunities and Business Planning" next="/textbook/modules/module-04" nextLabel="Module 4: Startup Valuation Methods and Cap Tables" />
