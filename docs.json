@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "Sector Ventures",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#2ED27A",
-    "dark": "#0F6B33"
+    "primary": "#2563EB",
+    "light": "#3B82F6",
+    "dark": "#1E3A8A"
   },
   "favicon": "/favicon.svg",
   "navigation": {
