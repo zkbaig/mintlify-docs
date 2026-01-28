@@ -156,6 +156,79 @@ The cap table below converts the round math into a clean ownership snapshot you 
 
 Use the timeline as a quick gut check before you finalize a more detailed model with actual share counts.
 
+#### Full round-by-round cap table (shares + percentages)
+
+**Assumptions**
+- Founders start with **8,000,000 shares**.
+- **Seed:** \$2M on \$6M pre (post \$8M) with a **10% post-money option pool** created pre-money.
+- **Series A:** \$6M on \$18M pre (post \$24M) with a **15% post-money pool refresh**.
+
+**Round 0: Founding**
+
+| Holder | Shares | Ownership % |
+| --- | --- | --- |
+| Founders | 8,000,000 | 100.0% |
+| **Total** | **8,000,000** | **100.0%** |
+
+**Round 1: Seed close (post-money)**
+
+| Holder | Shares | Ownership % |
+| --- | --- | --- |
+| Founders | 8,000,000 | 65.0% |
+| Seed investors | 3,076,923 | 25.0% |
+| Option pool (unallocated) | 1,230,769 | 10.0% |
+| **Total** | **12,307,692** | **100.0%** |
+
+**Round 2: Series A close (post-money)**
+
+| Holder | Shares | Ownership % |
+| --- | --- | --- |
+| Founders | 8,000,000 | 43.3% |
+| Seed investors | 3,076,923 | 16.7% |
+| Series A investors | 4,615,385 | 25.0% |
+| Option pool (unallocated) | 2,769,231 | 15.0% |
+| **Total** | **18,461,538** | **100.0%** |
+
+**Takeaway:** The share counts make dilution concrete—pool top-ups and new money change both the denominator and the ownership split.
+
+### Pool timing explainer (pre- vs. post-money pool)
+
+**Setup:** Founders have **8,000,000 shares**, raise **\$2M on an \$8M pre** (post \$10M). Target a **10% option pool**.
+
+| Pool timing | Founder % | Investor % | Pool % | What changes? |
+| --- | --- | --- | --- | --- |
+| **Pre-money pool** (created before financing) | 70.0% | 20.0% | 10.0% | Founders absorb pool dilution upfront. |
+| **Post-money pool** (created after financing) | 72.0% | 18.0% | 10.0% | Founders + investors share the pool dilution. |
+
+**Numeric detail (pre-money pool):** Total post shares = 11,428,571. Founders 8,000,000 (70.0%), investors 2,285,714 (20.0%), pool 1,142,857 (10.0%).
+
+**Numeric detail (post-money pool):** Investor buys 2,000,000 shares at \$1.00. After adding 1,111,111 pool shares, total = 11,111,111. Founders 72.0%, investors 18.0%, pool 10.0%.
+
+**Takeaway:** Pool timing is a negotiation lever—pre-money pools protect new investors, post-money pools spread dilution.
+
+### Pro rata decision mini-case
+
+**Case: BrightLeaf Robotics**
+- **Today:** Founders 60%, Seed fund 20%, Angel syndicate 10%, Option pool 10%.
+- **Series A:** \$8M on \$24M pre (post \$32M). New investors want **25% post**.
+- **Pro rata:** Seed fund has the right to maintain its 20% ownership.
+
+**Decision fork**
+- **Allow pro rata:** Seed fund invests \$6.4M (20% of the \$32M post) and keeps 20%. Founders drop to **45%**, angels to **7.5%**, pool to **7.5%**.
+- **Limit pro rata:** Seed fund invests \$3.2M (half its right). Seed drops to **10%**, founders land at **50%**, angels at **10%**, pool at **10%**, new investors increase to **30%**.
+
+**Founder takeaway:** Allowing pro rata can preserve supportive insiders but increases new-money size or founder dilution; limiting it preserves founder % but can strain investor relationships.
+
+### Dilution risk management checklist
+
+- [ ] Model every round on a **fully diluted** basis (include SAFEs and options).
+- [ ] Tie **option pool size** to a hiring plan, not a default %.
+- [ ] Negotiate **pool timing** (pre vs. post) and quantify the impact.
+- [ ] Track **ownership thresholds** (50%, 33%, 10%) for control and veto.
+- [ ] Pressure-test **downside cases** (down round, flat round, bridge).
+- [ ] Decide **pro rata policy** early and communicate it in the data room.
+- [ ] Revisit dilution quarterly as valuations and hiring change.
+
 ### Chapter 5: Summary checklist
 
 <Steps>
@@ -358,6 +431,85 @@ Cap table plus preferences determine payouts via a waterfall.
 <summary>Show answer</summary>
 
 **Answer:** When capital increases enterprise value faster than ownership decreases.
+</details>
+
+**Question:** If founders own 8,000,000 of 12,307,692 shares, what is their ownership percentage?  
+<details>
+<summary>Show answer</summary>
+
+**Answer:** 65.0%.
+</details>
+
+**Question:** Why might founders prefer a post-money option pool?  
+<details>
+<summary>Show answer</summary>
+
+**Answer:** It spreads pool dilution across founders and new investors instead of founders alone.
+</details>
+
+**Question:** In a \$24M post-money round, what % ownership does a \$6M investor receive?  
+<details>
+<summary>Show answer</summary>
+
+**Answer:** 25%.
+</details>
+
+**Question:** What is the main trade-off of granting full pro rata rights to early investors?  
+<details>
+<summary>Show answer</summary>
+
+**Answer:** It preserves insider ownership but can reduce founder % or increase total new money required.
+</details>
+
+**Question:** Why do cap tables track fully diluted shares rather than just issued shares?  
+<details>
+<summary>Show answer</summary>
+
+**Answer:** Because options, SAFEs, and convertibles can become shares and materially change ownership.
+</details>
+
+**Question:** When would a founder accept more dilution?  
+<details>
+<summary>Show answer</summary>
+
+**Answer:** When the added capital significantly raises enterprise value or accelerates milestones.
+</details>
+
+**Question:** What does a pool “top-up” do to existing shareholders?  
+<details>
+<summary>Show answer</summary>
+
+**Answer:** It increases total shares, diluting existing holders to restore the pool to a target %.
+</details>
+
+## Mini-Exercises
+
+**Mini-Exercise 1: Seed round pricing**
+
+You have 5,000,000 founder shares. A seed investor puts in \$1.5M at a \$6M pre-money valuation.  
+**Tasks:** (1) price per share, (2) new investor shares, (3) post-money ownership %.
+
+<details>
+<summary>Show answer</summary>
+
+**Answer:**  
+- Price per share = \$6M / 5,000,000 = **\$1.20**.  
+- New investor shares = \$1.5M / \$1.20 = **1,250,000**.  
+- Post-money shares = 6,250,000 → investor **20%**, founders **80%**.
+</details>
+
+**Mini-Exercise 2: Pool timing comparison**
+
+Founders own 9,000,000 shares. Raise \$3M on a \$12M pre (post \$15M) with a 10% option pool.  
+**Task:** Compare founder % with a **pre-money** pool vs a **post-money** pool.
+
+<details>
+<summary>Show answer</summary>
+
+**Answer:**  
+- **Pre-money pool:** Founders = 70%, investors = 20%, pool = 10%.  
+- **Post-money pool:** Founders ≈ 72.0%, investors ≈ 18.0%, pool = 10%.  
+Founders retain ~2 percentage points more with a post-money pool.
 </details>
 
 <ModuleNav previous="/textbook/modules/module-06" previousLabel="Module 6: Term Sheet Mechanics" next="/textbook/modules/module-08" nextLabel="Module 8: Investor–Founder Dynamics" />
