@@ -95,6 +95,18 @@ Entrepreneurial finance starts with **who provides capital**, **when they provid
 - **Venture capital:** High-growth equity with board influence and exit expectations.
 - **Non-dilutive capital:** Grants/loans that preserve ownership but add repayment or compliance risk.
 
+#### Ecosystem Map: Roles and financing paths
+
+The ecosystem is a relay team: each player steps in at different milestones and hands the venture forward.
+
+- **Founders:** Start with personal savings, early revenue, and sweat equity. *Example path:* A founder bootstraps an MVP to reach 10 pilot customers before raising an angel round.
+- **Angels:** Individuals who fund early validation and mentorship. *Example path:* Angels provide a \$250k seed to hire the first engineer and test pricing.
+- **Accelerators:** Cohort programs offering small checks, mentors, and demo day access. *Example path:* An accelerator invests \$100k for 6% to help a startup refine its pitch and close its seed round.
+- **Venture capital (VC):** Professional funds backing scalable growth with governance rights. *Example path:* A SaaS company with \$50k MRR raises Series A to scale sales and expand to new markets.
+- **Strategic investors:** Corporate partners investing for synergies. *Example path:* A telecom company invests in a fintech startup to secure distribution and product integration.
+- **Lenders:** Banks or specialized lenders providing debt when cash flows are predictable. *Example path:* After hitting \$1M ARR, a startup uses a venture debt line to extend runway between rounds.
+- **Government programs:** Grants or loans that reduce dilution and support R&D. *Example path:* A cleantech startup uses IRAP or BDC support to fund pilots before a priced seed round.
+
 <Callout type="note" title="Ecosystem in one sentence">
 Capital sources are a ladder: each rung funds a milestone, not just a budget.
 </Callout>
@@ -117,13 +129,21 @@ Use the funding lifecycle ladder to connect each stage to the milestone investor
 
 <Tabs>
   <Tab title="Funding lifecycle ladder">
-    | Stage | Milestone focus | Typical capital |
-    | --- | --- | --- |
-    | **Pre-seed** | Problem validation and MVP | Founders, friends/family, accelerators |
-    | **Seed** | Early traction and team build | Angels, seed funds |
-    | **Series A** | Repeatable growth engine | VC |
-    | **Series B/C** | Scale and global expansion | Growth VC |
-    | **Exit** | Acquisition or IPO | Strategic buyers, public markets |
+    | Stage | Milestone focus | Typical capital range | Investor expectations |
+    | --- | --- | --- | --- |
+    | **Pre-seed** | Problem validation, MVP, early user feedback | \$25k–\$500k | Proof of demand signals; founder-market fit |
+    | **Seed** | Early traction, team formation, pricing validation | \$500k–\$3M | Clear ICP, early revenue or pilots, credible GTM |
+    | **Series A** | Repeatable growth engine | \$3M–\$15M | Strong unit economics, scalable acquisition channels |
+    | **Series B/C** | Scale and expansion | \$10M–\$50M+ | Efficient growth, operating cadence, leadership depth |
+    | **Exit** | Liquidity event | N/A | Strategic value or public market readiness |
+
+    **Why the stage matters**
+
+    - **Pre-seed:** The goal is learning speed; capital is small because the business model is still fragile.
+    - **Seed:** Investors need proof that demand exists and the team can execute a focused go-to-market.
+    - **Series A:** The bar shifts to repeatability; growth must be predictable, not just promising.
+    - **Series B/C:** Capital funds scale, so investors expect operational maturity and clear expansion levers.
+    - **Exit:** The company must demonstrate defensible value for an acquirer or the public markets.
   </Tab>
   <Tab title="Financing gap logic">
     - Banks require collateral and predictability.
@@ -150,6 +170,34 @@ flowchart LR
 | Time horizon | Long-term mission | 5–10 year exit | Exit planning starts early |
 | Risk view | Personal downside | Portfolio diversification | Different risk appetites |
 | Capital use | Runway and flexibility | Milestones and validation | Tranche funding and metrics |
+
+### Chapter 3.5: Mini-cases on VC fit
+
+Use these scenarios to decide whether VC is the right path, then compare with the model answer.
+
+<AccordionGroup>
+  <Accordion title="Mini-case A: VC-fit startup — CloudOps AI">
+    **Scenario:** CloudOps AI automates cloud cost optimization for enterprise customers. ARR is \$1.5M with 20% MoM growth. Gross margins are 85%, sales cycles are repeatable, and churn is <2%.
+
+    **Decision prompts:** Should CloudOps pursue Series A VC? What milestone should the round fund?
+
+    **Model answer:** Yes. It shows strong unit economics, rapid growth, and a scalable distribution motion. The Series A should fund a repeatable enterprise sales team, expansion to adjacent verticals, and product depth to protect retention.
+  </Accordion>
+  <Accordion title="Mini-case B: Non-VC-fit startup — Neighborhood Kitchens">
+    **Scenario:** Neighborhood Kitchens operates three profitable meal-prep locations in a single metro area with \$900k annual revenue. Growth depends on opening more locations and hiring kitchen staff.
+
+    **Decision prompts:** Is VC appropriate? What funding sources fit better?
+
+    **Model answer:** Likely not. It is capital-intensive, locally constrained, and does not show VC-scale upside. Better fits include retained earnings, a bank loan, or small angel financing for one additional location.
+  </Accordion>
+  <Accordion title="Mini-case C: Borderline — BioSense Diagnostics">
+    **Scenario:** BioSense has a lab-validated prototype and two pilot hospital partners but faces long regulatory timelines. The market is large, but revenue could be 2–3 years away.
+
+    **Decision prompts:** Should BioSense raise VC now or stage funding? What should it prove first?
+
+    **Model answer:** Borderline. VC could be viable if the team can de-risk regulatory milestones and show clear clinical value. A staged path (grant + angel bridge) to reach regulatory progress and pilot outcomes before a larger VC round is prudent.
+  </Accordion>
+</AccordionGroup>
 
 ### Chapter 4: Worked example with numbers
 
@@ -290,6 +338,33 @@ flowchart TD
 - Underestimating dilution and governance implications that come with equity financing.
 - Pursuing rapid growth capital when the business model or market size does not support VC-scale returns.
 
+## Decision Checklist: Is VC fit right now?
+
+Use this checklist before committing to a VC path.
+
+- **Market size:** Can the venture plausibly support \$100M+ revenue or a very large exit?
+- **Growth rate:** Can you sustain high growth (e.g., 3–5x year-over-year) with a clear acquisition motion?
+- **Capital intensity:** Do you truly need large upfront capital to unlock growth, or can you stage it?
+- **Exit potential:** Is there a realistic path to acquisition or IPO within 5–10 years?
+
+## Common Misconceptions
+
+- **“VC means guaranteed success.”** It only means higher expectations and governance; execution risk remains.
+- **“All growth businesses should raise VC.”** Many durable businesses are too niche or capital-efficient for VC.
+- **“More capital always reduces risk.”** Overfunding can distort priorities and increase burn.
+- **“Debt is always cheaper.”** Debt requires repayment and can be dangerous without predictable cash flow.
+
+## Applied Exercise: Design a funding path
+
+**Prompt:** Design a 12–24 month funding path with **three milestones** and **capital sources**.
+
+1. **Milestone 1:** Define the validation milestone (e.g., MVP + 20 pilot users).  
+   **Source:** Founders, FFF, or accelerator.
+2. **Milestone 2:** Define early traction (e.g., \$20k MRR or 3 enterprise pilots).  
+   **Source:** Angels or seed fund.
+3. **Milestone 3:** Define repeatability (e.g., CAC/LTV validated and churn below 3%).  
+   **Source:** Series A VC or growth equity, depending on scale.
+
 ## Quick Checks
 
 <Tabs>
@@ -394,6 +469,24 @@ Score each item from **0–2** (0 = not true, 1 = partially true, 2 = clearly tr
   </Accordion>
   <Accordion title="When is non-dilutive funding a good fit?">
     When revenue exists and the venture can handle repayment or reporting requirements.
+  </Accordion>
+  <Accordion title="Why does the funding stage matter beyond just the amount raised?">
+    Each stage aligns to a specific milestone and investor expectation; mismatch leads to poor pricing or failed raises.
+  </Accordion>
+  <Accordion title="What is a realistic investor expectation at Series A?">
+    Proof of repeatable growth (validated CAC/LTV, retention, and a scalable acquisition channel).
+  </Accordion>
+  <Accordion title="Name two signals that a business is not VC-fit.">
+    Small or local market size and growth tied to linear headcount or physical expansion.
+  </Accordion>
+  <Accordion title="What is one advantage and one risk of venture debt?">
+    Advantage: extends runway without immediate dilution. Risk: repayment obligations can strain cash flow.
+  </Accordion>
+  <Accordion title="How can founders reduce dilution while still accelerating growth?">
+    Sequence milestones with smaller rounds, use non-dilutive grants, or improve capital efficiency before larger equity raises.
+  </Accordion>
+  <Accordion title="What question should founders ask before taking strategic investment?">
+    Whether the strategic partner creates real distribution or product synergy beyond the capital itself.
   </Accordion>
 </AccordionGroup>
 
