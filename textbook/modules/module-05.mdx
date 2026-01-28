@@ -168,7 +168,62 @@ If the outputs are far apart, revisit growth, margins, and exit assumptions unti
   <figcaption>Valuation triangulation: three methods converge on a defensible range.</figcaption>
 </figure>
 
-### Chapter 5: Summary checklist
+### Chapter 5: Method mismatch — when DCF, comps, and VC diverge
+
+Method mismatch happens when each approach is anchored to **different risk views**:
+
+- **DCF diverges** when long-term margin, discount rate, or terminal value assumptions swing (common when cash flows are still negative).
+- **Comps diverge** when the peer set is noisy, outdated, or in a different growth/margin regime.
+- **VC method diverges** when exit multiple and target return assumptions are mismatched to cycle or dilution risk.
+
+**Red flags for divergence**
+- DCF implies profitability that is not yet visible in unit economics.
+- Comps rely on public multiples during a market bubble (or trough).
+- VC method assumes aggressive exits without accounting for follow-on dilution.
+
+### Chapter 6: Worked example — three different valuations and reconciliation
+
+**Scenario:** \$2M ARR SaaS, 80% YoY growth, 70% gross margin, targeting a Series A.
+
+| Method | Key assumption | Implied value |
+| --- | --- | --- |
+| DCF | \$4M FCF in year 5, 45% discount, 10× terminal multiple | **\$12M** |
+| Comps | Peer median 9× ARR, apply 1× turn discount for smaller scale | **\$16M** |
+| VC method | \$160M exit in 5 years, 12× target return | **\$13M post-money** |
+
+**Reconciling the gap**
+1. **Normalize assumptions:** Adjust DCF margins to match what the comps imply (e.g., 15–20% FCF margin).
+2. **Check cycle effects:** If public SaaS comps fell from 12× to 9×, apply the lower multiple to both comps and terminal value.
+3. **Translate to a range:** Use the **overlap** (\$12M–\$16M) and defend a midpoint tied to milestones (e.g., \$14M with a plan to justify \$18M next round).
+
+<Callout type="info" title="Reconciliation rule of thumb">
+If methods are far apart, the **tightest overlap range** is the starting point; the narrative explains why you lean toward the top or bottom of the range.
+</Callout>
+
+### Chapter 7: Macro effects and shifting valuation ranges
+
+Macro conditions shift **discount rates, exit multiples, and comps**, moving the entire valuation range.
+
+- **Rate increases:** Higher discount rates compress DCF values and lower VC back-solves.
+- **Comps compression:** Public multiple contraction (e.g., 12× to 7× ARR) cascades into private pricing.
+- **Risk-off capital:** Investors raise return targets (10× → 15×), lowering VC-method valuations.
+
+**Practical takeaway:** In tightening cycles, update **all three methods**, then widen the range to reflect heightened uncertainty.
+
+### Chapter 8: How to defend a valuation in a term sheet discussion
+
+Use this checklist to keep the valuation grounded and credible.
+
+- [ ] **Anchor to triangulation:** Show DCF + comps + VC method and cite why the range is reasonable.
+- [ ] **Explain method choice:** State which method is most reliable at the current stage and why.
+- [ ] **Show sensitivity:** Highlight how value changes with growth, margins, or multiples.
+- [ ] **Connect to milestones:** Tie the top end of the range to specific, achievable milestones.
+- [ ] **Address dilution:** Acknowledge follow-on rounds and the effect on investor ownership.
+- [ ] **Clarify terms impact:** Explain how liquidation preferences or option pools affect real value.
+- [ ] **Use market data:** Bring 2–3 current comps and explain adjustments.
+- [ ] **Offer a concession lever:** Keep non-price terms (board, liquidation, pro rata) in view.
+
+### Chapter 9: Summary checklist
 
 <Steps>
   <Step title="Bracket a range">
@@ -316,6 +371,24 @@ If the outputs are far apart, revisit growth, margins, and exit assumptions unti
 - High discount rates and return multiples reflect VC risk and dilution.
 - Term-sheet terms can make a “high valuation” economically worse.
 
+## Applied Exercises
+
+**Exercise 1: Reconcile a wide spread**  
+DCF gives \$10M, comps give \$18M, VC method gives \$12M. You expect a rate hike next quarter.
+<details>
+<summary>Show answer</summary>
+
+**Answer:** Re-run DCF with a higher discount rate and reduce terminal multiples; tighten comps to the lower end. A defensible range might be \$10M–\$14M, with a midpoint tied to near-term milestones.
+</details>
+
+**Exercise 2: Defend a valuation in a term sheet**  
+You want \$20M post-money; investor cites lower comps at \$14M. What evidence closes the gap?
+<details>
+<summary>Show answer</summary>
+
+**Answer:** Show a triangulated range that includes a higher multiple justified by superior growth or margins, emphasize upcoming milestones, and offer a term concession (e.g., board seat) to bridge price.
+</details>
+
 ## Practice Questions
 
 **Question:** Why are startup discount rates often 30–60%?  
@@ -358,6 +431,20 @@ If the outputs are far apart, revisit growth, margins, and exit assumptions unti
 <summary>Show answer</summary>
 
 **Answer:** Stronger liquidation preference or board control (hint: avoid if too punitive).
+</details>
+
+**Question:** How do rate hikes typically affect DCF and VC-method values?  
+<details>
+<summary>Show answer</summary>
+
+**Answer:** Higher discount rates reduce DCF values and lower VC-method back-solved values.
+</details>
+
+**Question:** What is one way to reconcile a mismatch between DCF and comps?  
+<details>
+<summary>Show answer</summary>
+
+**Answer:** Align long-term margins and terminal multiples to the comps environment, then re-derive the DCF.
 </details>
 
 <ModuleNav previous="/textbook/modules/module-04" previousLabel="Module 4: Startup Valuation Methods and Cap Tables" next="/textbook/modules/module-06" nextLabel="Module 6: Term Sheet Mechanics" />
