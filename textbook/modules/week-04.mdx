@@ -1,0 +1,523 @@
+---
+title: "Module 4: Startup Valuation Methods and Cap Tables"
+description: "Module 4 of Entrepreneurial Finance"
+toc: true
+---
+
+import ModuleNav from "/snippets/module-nav.mdx";
+
+## Module Navigation
+
+### All modules
+- [Module 1: The Entrepreneurial Finance Ecosystem and Funding Landscape](/textbook/modules/module-01)
+- [Module 2: Evaluating Venture Opportunities and Business Planning](/textbook/modules/module-02)
+- [Module 3: Financial Projections and Startup Financials](/textbook/modules/module-03)
+- [Module 4: Startup Valuation Methods and Cap Tables](/textbook/modules/module-04)
+- [Module 5: Startup Valuation Methods](/textbook/modules/module-05)
+- [Module 6: Term Sheet Mechanics](/textbook/modules/module-06)
+- [Module 7: Cap Tables and Dilution](/textbook/modules/module-07)
+- [Module 8: Investor–Founder Dynamics](/textbook/modules/module-08)
+- [Module 9: Exit Strategies – IPOs, Acquisitions, and Secondaries](/textbook/modules/module-09)
+- [Module 10: LP–GP Relationships and Venture Fund Structures](/textbook/modules/module-10)
+- [Module 11: Global Venture Capital Markets and Cross-Border Investing](/textbook/modules/module-11)
+- [Module 12: The Future of Venture Capital – Emerging Trends and Alternative Models](/textbook/modules/module-12)
+
+### In this module
+<TOC />
+
+### Jump to next module
+[Module 5: Startup Valuation Methods](/textbook/modules/module-05)
+
+
+## Module Snapshot
+
+<Callout type="info" title="This module at a glance">
+Focus on the core venture finance decisions tied to **Module 4**: opportunity selection, risk trade-offs, and investor-style reasoning.
+</Callout>
+
+## Key Facts
+
+<CardGroup>
+  <Card title="Module theme" icon="compass">
+    Startup valuation methods, cap tables, and ownership mechanics.
+  </Card>
+  <Card title="Key frameworks" icon="sitemap">
+    Venture capital (VC) method, comparables, and scenario-based valuation logic.
+  </Card>
+  <Card title="Core deliverable" icon="clipboard-check">
+    Pre/post-money valuation example plus a method comparison.
+  </Card>
+</CardGroup>
+
+## Learning Objectives
+
+<Callout type="success" title="Learning Objectives">
+- Apply the venture capital method, comparables, and scenario-based logic to value startups.
+- Explain pre-money vs. post-money valuation and how ownership percentages are derived.
+- Build and interpret cap tables, including option pools and dilution.
+- Evaluate how Simple Agreements for Future Equity (SAFEs)/convertibles affect ownership at priced rounds.
+- Recognize the role of negotiation, market dynamics, and exit expectations in valuation.
+</Callout>
+
+## Module Tasks
+
+<Callout type="tip" title="Module Tasks">
+- [ ] Calculate a pre-money and post-money valuation example using the VC method and explain the inputs.
+- [ ] Compare valuation results from VC method vs. comparables in a short note.
+</Callout>
+
+## Key Concepts
+
+- **Venture capital (VC) method:** Use exit math and a target return (often 10×, 30–50% annual) to determine what today’s price must be for the investor to hit their outcome; it is an ownership-driven pricing check, not a forecast.
+- **Pre-money vs. post-money:** Pre-money is the price founders are selling at; post-money is the price investors divide by to set their ownership (investment ÷ post), which locks the starting cap table split.
+- **Cap table:** The ownership ledger that dictates who controls votes, economics, and hiring equity; it tracks share counts and percentages after each financing event.
+- **Option pool:** Reserved equity for employees, often created pre-money; it expands the share count before the round closes, shifting dilution to existing holders so the company can recruit.
+- **Comparable multiples:** Market benchmarks (revenue, earnings before interest, taxes, depreciation, and amortization (EBITDA), users) that anchor pricing to what similar companies are actually trading for.
+- **Simple Agreement for Future Equity (SAFE):** Contract that converts into equity at a future priced round, typically with a valuation cap and/or discount instead of interest or maturity; it defers pricing but still allocates future ownership.
+- **Convertible notes:** Short-term debt that converts into equity at a future round, usually carrying interest and a maturity date plus a cap/discount, making conversion economics sensitive to timing and valuation.
+- **Unicorn:** Startup valued at \$1B+.
+- **Annual recurring revenue (ARR):** Annualized subscription revenue run rate.
+
+## Main Content
+
+### Chapter 1: Definitions and valuation anatomy
+
+Valuation is the **price of ownership today**, set by how much leverage you have, how strong your story is, and what the market is paying right now for similar risk.
+
+- **Pre-money:** Value before new investment; it frames the price founders are willing to sell at and how much dilution they take for the round.
+- **Post-money:** Pre-money plus new capital; it is the denominator investors use to set ownership.
+- **Dilution:** Ownership reduction from new shares, whether from new investors, option pools, or conversions.
+- **Option pool:** Reserved shares for future hires; typically negotiated as a post-money target but created pre-money, shifting dilution to existing holders.
+
+<Callout type="note" title="Cap tables tell the story">
+Every valuation choice changes who owns what and who controls the board.
+</Callout>
+
+<Callout type="info" title="Negotiation reality check">
+Valuation is leverage + story + market conditions. Terms and pool sizing can move the *effective* price even if the headline number stays the same.
+</Callout>
+
+<CardGroup>
+  <Card title="Valuation range" icon="scale-balanced">
+    Triangulate methods to bracket a realistic price.
+  </Card>
+  <Card title="Ownership impact" icon="percent">
+    Model dilution before negotiating terms.
+  </Card>
+  <Card title="Governance" icon="gavel">
+    Board and control rights shift with valuation.
+  </Card>
+</CardGroup>
+
+### Chapter 2: Frameworks and decision tools
+
+<Tabs>
+  <Tab title="VC method">
+    1. Forecast exit value
+    2. Apply target return (e.g., 10×)
+    3. Discount to post-money today
+  </Tab>
+  <Tab title="Scorecard/Berkus">
+    - Start from a base valuation
+    - Adjust for team, traction, market, and product risk
+  </Tab>
+</Tabs>
+
+### When to use each method (by stage)
+
+Before the table, remember that method selection is a stage-appropriate trade-off: the less operating history you have, the more you rely on qualitative adjustments and exit math.
+
+| Stage | Best-fit method(s) | Rationale |
+| --- | --- | --- |
+| Idea/Pre-seed | Scorecard/Berkus | Limited financial history; emphasize team, market size, and product risk. |
+| Seed | VC method + early comps | Early traction exists, but exit math anchors expectations; comps provide a market sanity check. |
+| Series A/B | VC method + comps + scenario analysis | Clearer KPIs and comparables; scenario cases help capture execution risk. |
+| Growth/Late | Comps + DCF (if stable cash flows) | More predictable revenue allows cash-flow modeling; comps anchor market pricing. |
+| Pre-IPO | Comps + DCF | Market comparables and public metrics dominate negotiations. |
+
+**Interpretive summary:** Early-stage pricing is anchored by potential and risk adjustments; later-stage pricing increasingly reflects observable market metrics and cash-flow stability.
+
+### Chapter 3: Investor vs. founder perspective
+
+The table below contrasts incentives, so read it as a negotiation map: each “lens” implies a different definition of a fair price and a different tolerance for dilution.
+
+| Dimension | Founder lens | Investor lens | Implication |
+| --- | --- | --- | --- |
+| Valuation | Maximize price | Optimize risk-adjusted return | Negotiation trade-offs |
+| Option pool | Minimize dilution | Future hiring protection | Pool sizing debate |
+| Governance | Retain control | Board oversight | Term sheet leverage |
+| Timing | Raise later | Raise before cash crisis | Timing affects price |
+
+**Interpretive summary:** Ownership outcomes are not just about price; they are shaped by control, hiring plans, and timing, which is why negotiations often trade governance or pool size for valuation.
+
+### Chapter 4: Worked example with numbers
+
+**Scenario:** \$2M seed on \$6M pre-money with a 10% post-money option pool.
+
+The cap table below shows **post-money ownership** after the seed round closes. Use it to see how the option pool and new money change founder percentages, and treat the table as a snapshot that ties valuation inputs to ownership outputs.
+
+| Holder | Ownership (post) |
+| --- | --- |
+| Founders | 65% |
+| Option pool | 10% |
+| Seed investors | 25% |
+
+**Post-money:** \$8M. Investor ownership = \$2M ÷ \$8M = 25%.
+
+**Key takeaway:** Even with a healthy pre-money, adding a post-money option pool and new capital compresses founder ownership quickly, so founders should model dilution before agreeing to pool size or pricing.
+
+**Practical consequences**
+- **For founders:** Lower ownership can reduce board control, make future rounds harder to stomach, and limit flexibility to use equity for hiring or strategic advisors.
+- **For hires:** A larger pool means more room for offers, but a higher valuation can raise strike prices and make option packages feel less valuable unless the growth story supports it.
+
+#### Full share count example (pre- and post-money)
+
+**Assumptions**
+- Founders start with **13,000,000 shares**.
+- Target **10% post-money option pool**.
+- \$2M new investment on \$6M pre-money.
+
+**Step 1: Compute post-money valuation**
+- \$6M pre + \$2M investment = **\$8M post**.
+
+**Step 2: Solve the post-money share count**
+- Post-money shares include founders + option pool + new investors.
+- Let total post-money shares be **T**.
+
+Founders = 65% of T (because 10% pool + 25% investors)  
+13,000,000 = 0.65T → **T = 20,000,000 shares**
+
+**Step 3: Derive price per share and investor shares**
+- Price per share = \$8M ÷ 20,000,000 = **\$0.40**.
+- Investor shares = \$2M ÷ \$0.40 = **5,000,000 shares**.
+- Option pool shares = 10% of T = **2,000,000 shares**.
+
+**Post-money ownership**
+This table converts the valuation math into actual share counts so you can see the mechanics of dilution rather than just the percentages.
+| Holder | Shares | Ownership |
+| --- | --- | --- |
+| Founders | 13,000,000 | 65% |
+| Option pool | 2,000,000 | 10% |
+| Seed investors | 5,000,000 | 25% |
+| **Total** | **20,000,000** | **100%** |
+
+**Interpretive summary:** The post-money share count is the bridge between price per share and ownership; once it is set, every stakeholder’s percentage is mechanically determined.
+
+#### Simple dilution timeline
+
+1. **Day 0:** Founders 100% (13,000,000 shares).
+2. **Create pool:** Founders 90%, pool 10% if created pre-money.
+3. **Close seed:** Founders 65%, pool 10%, investors 25% post-money.
+
+```mermaid
+flowchart LR
+  A[Pre-money<br/>Founders 100%] --> B[Add option pool<br/>Founders 90% | Pool 10%]
+  B --> C[Add $2M seed<br/>Founders 65% | Pool 10% | Investors 25%]
+```
+
+#### VC Method: step-by-step calculation
+
+**Assumptions**
+- Target exit in 5 years: **\$150M**
+- Investor target return: **10×**
+- Desired ownership at entry: **25%**
+- Investment check size: **\$3M**
+
+The steps below illustrate how exit math translates into today’s valuation and why investors focus on ownership rather than just headline price.
+
+**Step 1: Compute required value at exit**
+- Investor needs \$3M × 10 = **\$30M** in exit proceeds.
+
+**Step 2: Translate exit proceeds into ownership**
+- Ownership required = \$30M ÷ \$150M = **20%**.
+
+**Step 3: Compare to desired ownership**
+- Target 25% ownership exceeds the 20% required, providing a buffer.
+
+**Step 4: Back into post-money valuation**
+- If \$3M buys 25%, post-money = \$3M ÷ 0.25 = **\$12M**.
+
+**Step 5: Implied pre-money valuation**
+- \$12M post − \$3M investment = **\$9M pre-money**.
+
+**Interpretation**
+- At \$12M post, the investor’s 25% stake would be worth \$37.5M at a \$150M exit, exceeding the 10× target.  
+- Founders can argue that the math supports a higher pre-money unless risk or execution concerns justify more investor ownership.
+- In negotiation, this is where leverage shows up: stronger metrics or multiple investors push the price up; weak traction or a cold market pulls ownership demands higher.
+
+**Interpretive summary:** The VC method is ownership-driven; if the exit math clears the return target, valuation becomes a negotiation over risk rather than a purely financial constraint.
+
+### Chapter 5: Summary checklist
+
+<Steps>
+  <Step title="Pick a method">
+    Triangulate VC method, comps, and qualitative adjustments.
+  </Step>
+  <Step title="Model dilution">
+    Build a cap table before negotiating terms.
+  </Step>
+  <Step title="Align with milestones">
+    Set valuation consistent with traction and upcoming risk.
+  </Step>
+</Steps>
+
+## Key Takeaways
+
+<Callout type="success" title="Key Takeaways">
+- Valuation blends exit math, comps, and negotiation leverage.
+- Dilution modeling prevents surprises in ownership outcomes.
+- Option pools and convertibles meaningfully shift founder control.
+</Callout>
+
+## Worked Examples
+
+### In-class activity: Valuation and cap table role-play
+
+- **Setup:** Teams role-play founders of DataDive Inc. and Series A investors.
+- **Shared facts:** 3 founders own 100%; \$1M SAFE with \$5M cap; \$200k revenue and growth.
+- **Founder goals:** Seek ≥\$8M pre, raise \$2M, accept 10% option pool if required.
+- **Investor goals:** Target 30% ownership for \$2M, prefer ~\$6–7M pre, insist on ~15% post option pool.
+- **Negotiation:** Agree on pre-money and option pool; fill cap table with 1M pre shares.
+- **Outcome:** Compare terms (e.g., \$8M pre, \$2M raise → \$10M post; 20% investor, 10% pool).
+- **Lesson:** Negotiation is part math, part leverage; option pools materially dilute founders.
+
+Use this activity to practice translating term sheet language into ownership outcomes; the numbers are less important than the logic linking pre-money, pool size, and post-money percentages.
+
+### Case study: PharmaCo valuation negotiation
+
+- **Background:** Montreal biotech with promising results; seed SAFE \$1M at \$5M cap; needs Series A.
+- **Negotiation:** Founders want \$20M pre; VC wants \$12M; BigPharma co-invests \$4M with strategic rights.
+- **SAFE impact:** \$1M at \$5M cap converts to ~16.7% pre-Series A, diluting founders early.
+- **Option pool:** VC requires 15% post pool; ~10% new pool created pre-money.
+- **Scenario outcomes:**
+  - \$18M pre with \$12M raise → \$30M post; founders ~45–50%, VC ~40%, BigPharma ~13%, pool ~15%.
+  - \$14M pre with \$12M raise → \$26M post; founders can fall below 30% due to SAFE and pool dilution.
+- **Exhibit summary:** Example cap table shows founders ~22–30%, SAFE ~5–6%, Series A ~52%, option pool ~15% (approximate).
+- **Term snippet:** “\$12M Maple Leaf, \$4M BigPharma at \$15M pre inclusive of 15% pool; SAFE converts at \$5M cap.”
+
+**Interpretive summary:** The case illustrates how SAFEs and option pools compress founder ownership before new capital arrives, which is why negotiators focus on both price and conversion mechanics.
+
+### Mini-case: Valuation negotiation (founder vs. investor)
+
+**Scenario:** OrbitAI is raising \$4M for a Series A. Revenue is \$1.2M ARR growing 12% MoM.  
+**Founder anchor:** \$20M pre-money.  
+**Investor anchor:** \$14M pre-money with a 15% post-money option pool.
+
+**Founder viewpoint**
+- \$20M pre reflects ARR growth and strong retention.
+- Accepts smaller pool (10%) to protect hiring flexibility later.
+- Seeks enough capital to avoid another raise for 18 months.
+
+**Investor viewpoint**
+- ARR quality is promising but churn is unproven at scale.
+- Requires 20–25% ownership for risk-adjusted returns.
+- Wants a larger option pool to recruit a VP Sales and a senior ML lead.
+
+**Negotiation outcome (example)**
+- Agree on **\$16M pre** with **12% post pool** and **\$4M raise** → \$20M post.
+- Investor ownership = \$4M ÷ \$20M = **20%**.
+- Founders accept pool expansion in exchange for a higher pre-money than the investor’s anchor.
+
+**Interpretive summary:** The negotiated outcome shows how founders can trade a modest pool increase for a stronger pre-money, keeping ownership within the desired range while addressing hiring needs.
+
+### Discussion prompts and teaching notes
+
+- **Why did founders and investors compromise at \$15M pre in PharmaCo?**
+  - Teaching note: Founders needed capital and validation; investors balanced risk, SAFE dilution, and founder motivation.
+- **How did the \$1M SAFE at a \$5M cap affect dilution?**
+  - Teaching note: SAFE converts at a lower effective valuation, giving seed investors ~3× the equity vs. Series A price.
+- **What is the post-Series A ownership breakdown?**
+  - Teaching note: Series A ~52%, founders ~22–30%, option pool ~15%, seed SAFE ~5–6% depending on pool timing.
+- **What trade-offs do strategics introduce in valuation negotiations?**
+  - Teaching note: They may accept higher valuations in exchange for strategic rights.
+
+## Pitfalls
+
+<Callout type="warning" title="Pitfalls to Avoid">
+- Overreliance on formulas without negotiation context.
+- Ignoring option pool dilution in pre-money calculations.
+- Using comparables without stage or risk adjustments.
+- Overestimating exit values or return multiples to justify valuations.
+- Underestimating SAFE cap dilution at later rounds.
+</Callout>
+
+## Quick Checks
+
+<Tabs>
+  <Tab title="VC method mini-case">
+    Assume a \$120M exit in 5 years and a 10× target return. What is the implied post-money today?
+  </Tab>
+  <Tab title="Comparables mini-case">
+    A peer trades at 6× revenue. If the startup has \$2M ARR, what valuation does that imply?
+  </Tab>
+</Tabs>
+
+<AccordionGroup>
+  <Accordion title="Pre- vs. post-money">
+    **Question:** If a startup raises \$3M on \$9M pre, what is post-money and investor ownership?  
+    **Answer:** \$12M post; investor owns 25%.
+  </Accordion>
+  <Accordion title="Option pool impact">
+    **Question:** Why does a pre-money option pool dilute founders more?  
+    **Answer:** It increases the share count before new money, reducing founder %.
+  </Accordion>
+  <Accordion title="SAFE conversion">
+    **Question:** How does a \$5M cap SAFE affect Series A ownership?  
+    **Answer:** It converts at the lower cap price, increasing early investor %.
+  </Accordion>
+</AccordionGroup>
+
+### Mini-exercise: Build a 3-line cap table
+
+**Inputs**
+- Pre-money valuation: \$6M
+- New investment: \$2M
+- Post-money option pool target: 10%
+
+**Expected outputs**
+- Post-money valuation: \$8M
+- Investor ownership: 25%
+- Founders ownership (after pool): 65%
+
+<AccordionGroup>
+  <Accordion title="What is the VC method and when is it used?">
+    Back-solves valuation from exit value and target return for early-stage companies.
+  </Accordion>
+  <Accordion title="Why is DCF less practical for startups?">
+    High uncertainty and discount rates make outputs unreliable.
+  </Accordion>
+  <Accordion title="How do comparables work?">
+    Apply market multiples and adjust for growth, risk, and stage.
+  </Accordion>
+  <Accordion title="How do pre- and post-money valuations relate to ownership?">
+    Investor % = investment/post-money.
+  </Accordion>
+  <Accordion title="What is an option pool and who it dilutes?">
+    Reserved equity, typically diluting founders pre-money.
+  </Accordion>
+  <Accordion title="How do ownership percentages shift across rounds?">
+    Founders and early investors dilute as new money enters, ideally for a larger valuation.
+  </Accordion>
+</AccordionGroup>
+
+## Readings
+
+### Required Readings
+
+- **Feld & Mendelson (2016), Venture Deals (Ch. 5).** Valuation negotiation, option pools, and ownership math.
+- **Smith (2020). “Startup Valuation in Practice.”** Angel/VC valuation heuristics and negotiation behavior.
+
+### Optional Readings
+
+- **Y Combinator SAFE User Guide (2018).** Caps and conversion mechanics.
+- **National Venture Capital Association (NVCA) Model Term Sheet (Valuation sections).** Legal framing of pre/post-money and option pool language.
+
+### Additional Resources
+
+- **Harvard Business Review (HBR):** “How Venture Capitalists Make Decisions.”
+- **Canadian Venture Capital and Private Equity Association (CVCA):** Year-end VC report for Canada.
+- **Founder Collective:** “Four Ways that VCs Evaluate Startup Pitches.”
+
+## Summary
+
+$$
+\text{Post-money Valuation} = \frac{\text{Investment Amount}}{\text{Investor Ownership}}
+$$
+
+$$
+\text{Pre-money Valuation} = \text{Post-money Valuation} - \text{Investment Amount}
+$$
+
+$$
+\text{VC Method (Exit Value)} = \frac{\text{Expected Exit Value}}{\text{Target Return Multiple}}
+$$
+
+- Valuation is a mix of math, market context, and negotiation.
+- Cap tables translate valuation into ownership; option pools change the math.
+- SAFEs/convertibles defer valuation but influence later dilution.
+
+## Practice Questions
+
+<AccordionGroup>
+  <Accordion title="When should you prefer the VC method over comparables?">
+    **Answer:** Early-stage rounds with limited comparables, where exit-based return math provides a clearer anchor.
+  </Accordion>
+  <Accordion title="What is the impact of a post-money option pool on investor ownership?">
+    **Answer:** It leaves investor ownership unchanged post-close but increases dilution for founders.
+  </Accordion>
+  <Accordion title="If a startup raises $5M on a $15M pre, what is the post-money?">
+    **Answer:** \$20M post-money.
+  </Accordion>
+  <Accordion title="How does a valuation cap in a SAFE affect Series A pricing?">
+    **Answer:** It converts at the lower cap price, giving SAFE holders more shares than Series A investors pay for.
+  </Accordion>
+  <Accordion title="Why might a VC accept a higher valuation with a larger option pool?">
+    **Answer:** The pool ensures critical hires without returning for a down round, protecting future value.
+  </Accordion>
+  <Accordion title="What does a 10× return target imply about holding period risk?">
+    **Answer:** It compensates for high risk and illiquidity typical of early-stage investing.
+  </Accordion>
+  <Accordion title="If exit value doubles, what happens to required ownership for the same return?">
+    **Answer:** Required ownership decreases because the exit proceeds per share increase.
+  </Accordion>
+  <Accordion title="What negotiation lever can founders use besides valuation?">
+    **Answer:** Option pool sizing, investor ownership targets, and governance terms like board seats.
+  </Accordion>
+</AccordionGroup>
+
+**Question:** If pre-money is \$6M and investment is \$2M, what is post-money?  
+<details>
+<summary>Show answer</summary>
+
+**Answer:** \$8M.
+</details>
+
+**Question:** Investor ownership from the above deal?  
+<details>
+<summary>Show answer</summary>
+
+**Answer:** \$2M ÷ \$8M = 25% (before pool adjustments).
+</details>
+
+**Question:** Why do investors ask for a pre-money option pool?  
+<details>
+<summary>Show answer</summary>
+
+**Answer:** It shifts dilution to founders rather than investors.
+</details>
+
+**Question:** If exit is \$100M and investor needs 10×, what post-money is acceptable for a \$5M check?  
+<details>
+<summary>Show answer</summary>
+
+**Answer:** \$50M post-money (needs \$50M value for 10× on \$5M).
+</details>
+
+**Question:** Name one factor that increases scorecard valuation.  
+<details>
+<summary>Show answer</summary>
+
+**Answer:** Strong team or above-average traction.
+</details>
+
+**Question:** What happens to founder ownership when a larger option pool is created?  
+<details>
+<summary>Show answer</summary>
+
+**Answer:** Founder ownership decreases proportionally.
+</details>
+
+### Multi-step exercises
+
+<AccordionGroup>
+  <Accordion title="Exercise 1: VC Method with dilution">
+    **Prompt:** Assume a \$200M exit in 6 years. A VC invests \$5M and wants a 12× return. If founders are willing to sell 25% ownership, what is the maximum post-money? Is the target return achievable?  
+    **Answer:** Required proceeds = \$5M × 12 = \$60M. Required ownership = \$60M ÷ \$200M = 30%. Since founders only offer 25%, the return is not achievable. Max post-money at 25% ownership is \$5M ÷ 0.25 = \$20M, which yields \$50M at exit (10×).
+  </Accordion>
+  <Accordion title="Exercise 2: Cap table with pool and SAFE">
+    **Prompt:** Founders have 8,000,000 shares. A \$1M SAFE with a \$5M cap converts at Series A. Series A is \$4M on \$12M pre with a 10% post pool. Build a simplified ownership breakdown.  
+    **Answer:** SAFE price uses \$5M cap. Pre-money price per share (Series A) = \$12M ÷ 8,000,000 = \$1.50. SAFE price = \$5M ÷ 8,000,000 = \$0.625. SAFE shares = \$1M ÷ \$0.625 = 1,600,000. Series A shares = \$4M ÷ \$1.50 = 2,666,667. Total shares before pool = 8,000,000 + 1,600,000 + 2,666,667 = 12,266,667. Post pool total = 12,266,667 ÷ 0.90 = 13,629,630. Pool shares = 1,362,963. Ownership: founders ~58.7%, SAFE ~11.7%, Series A ~19.6%, pool 10%.
+  </Accordion>
+</AccordionGroup>
+
+<ModuleNav previous="/textbook/modules/module-03" previousLabel="Module 3: Financial Projections and Startup Financials" next="/textbook/modules/module-05" nextLabel="Module 5: Startup Valuation Methods" />
