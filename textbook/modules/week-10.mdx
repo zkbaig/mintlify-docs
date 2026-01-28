@@ -87,15 +87,15 @@ To ensure consistent terminology, this module uses LP (limited partner), GP (gen
 
 ### Definitions: LP–GP roles and fund structure basics
 
-Venture funds connect **LP capital** with **GP decision-making**.
+Venture funds connect **LP capital** with **GP decision-making**, but they also create **structured incentives and constraints** that can diverge in practice.
 
-- **LPs:** Provide capital and expect returns.
-- **GPs:** Manage the fund and make investments.
-- **Management fee:** Annual fee (e.g., 2%) to run the fund.
-- **Carry:** Share of profits (e.g., 20%).
+- **LPs:** Provide capital, prioritize risk-adjusted returns, and care about liquidity timing.
+- **GPs:** Manage the fund, build portfolios, and balance fund performance with platform sustainability.
+- **Management fee:** Annual fee (e.g., 2%) to run the fund and keep the GP platform operating.
+- **Carry:** Share of profits (e.g., 20%) that rewards upside, often after LPs recoup capital.
 
 <Callout type="info" title="Fund math drives behavior">
-GP incentives are shaped by fee income, carry, and fund life.
+GP incentives are shaped by fee income, carry, and fund life, while LP incentives emphasize liquidity, mark discipline, and long-horizon value creation.
 </Callout>
 
 ```mermaid
@@ -109,13 +109,13 @@ flowchart LR
 
 <CardGroup>
   <Card title="Incentives" icon="bullseye">
-    Fee and carry align GP behavior with performance.
+    Fees keep the platform running; carry rewards outsized wins.
   </Card>
   <Card title="Fund economics" icon="calculator">
-    Fee load reduces investable capital.
+    Fee load reduces investable capital and raises LP break-even.
   </Card>
   <Card title="Portfolio strategy" icon="sitemap">
-    Fund size dictates check size and ownership targets.
+    Fund size dictates check size, ownership targets, and risk appetite.
   </Card>
 </CardGroup>
 
@@ -123,9 +123,9 @@ flowchart LR
 
 <Tabs>
   <Tab title="Fund life cycle">
-    - Years 0–3: Invest
-    - Years 4–7: Support and follow-on
-    - Years 8–10: Exit and distribute
+    - Years 0–3: Invest (deployment pressure; capital calls accelerate)
+    - Years 4–7: Support and follow-on (reserves, triage, and extension planning)
+    - Years 8–10: Exit and distribute (liquidity focus and DPI pressure)
   </Tab>
   <Tab title="Economics stack">
     - Management fees cover ops
@@ -152,25 +152,33 @@ Funds follow a predictable cash flow arc: **fees and capital calls early, deploy
 - **Deployment:** Capital calls fund new investments and follow-ons; pacing depends on strategy and market cycle.
 - **Distributions:** Cash or stock from exits; early distributions improve DPI and reduce perceived risk.
 
+<Callout type="warning" title="Reality check: fund timelines">
+Even “10-year” funds commonly extend 1–3 years to exit the tail. LPs underwrite to the base term but price in extensions, while GPs face pressure to realize liquidity without forcing suboptimal sales.
+</Callout>
+
 ### Mechanics: Performance metrics (DPI, TVPI, IRR)
 
-Use these metrics together to see **liquidity timing** and **total value**. Each metric emphasizes a different dimension of LP outcomes.
+Use these metrics together to see **liquidity timing**, **total value**, and **time-weighted performance**. Each metric emphasizes a different dimension of LP outcomes and can tell a different story depending on fund age.
 
 - **DPI (Distributions to Paid-In):** Cash returned ÷ capital called.  
   **Example:** \$30M distributed on \$60M paid-in = **0.5× DPI**.  
-  **Interpretation:** Below 1.0× means LPs have not received back their capital yet.
+  **Interpretation:** Below 1.0× means LPs have not received their capital back yet. A 0.5× DPI in year 6 can be acceptable, but in year 9 it signals a slow exit pace.
 - **TVPI (Total Value to Paid-In):** (Distributions + remaining NAV) ÷ paid-in.  
   **Example:** \$30M distributed + \$45M NAV = \$75M on \$60M paid-in = **1.25× TVPI**.  
-  **Interpretation:** Captures total value, but can be inflated by unrealized marks.
+  **Interpretation:** Captures total value, but can be inflated by unrealized marks. A 1.25× TVPI with low DPI means value is still mostly on paper.
 - **IRR (Internal Rate of Return):** Time-weighted annualized return based on cash flow timing.  
   **Example:** \$60M called over years 1–3 and \$120M distributed in year 8 yields **~10–12% IRR** (timing sensitive).  
-  **Interpretation:** High IRR can come from early small exits; compare alongside DPI/TVPI to avoid timing bias.
+  **Interpretation:** High IRR can come from early small exits. A fund with 20% IRR but 0.6× TVPI is signaling timing, not necessarily a large total return.
 
-**Interpretation:** DPI indicates liquidity, TVPI reflects overall value, and IRR explains time-weighting; LPs rely on the trio to avoid misleading signals from any single metric.
+**Interpretation:** DPI signals liquidity, TVPI reflects overall value, and IRR explains time-weighting; LPs triangulate the three to avoid misleading signals from any single metric.
+
+<Callout type="warning" title="Reality check: DPI pressure">
+LPs face their own liquidity targets and re-up cycles. Even strong TVPI can feel weak if DPI stays low late in the fund, so GPs often feel pressure to show realizations (not just marks) as fund life progresses.
+</Callout>
 
 ### Implications: Investor vs. founder perspective
 
-Use this lens table to compare priorities by stakeholder so you can see where incentives align or diverge. The contrast clarifies how LP objectives shape GP decisions and founder expectations.
+Use this lens table to compare priorities by stakeholder so you can see where incentives align or diverge. The contrast clarifies how LP objectives shape GP decisions and founder expectations in practice.
 
 | Dimension | Founder lens | GP lens | LP lens |
 | --- | --- | --- | --- |
@@ -179,7 +187,7 @@ Use this lens table to compare priorities by stakeholder so you can see where in
 | Reporting | Updates | Portfolio management | Fund performance |
 | Risk | Single-company focus | Diversified bets | Portfolio allocation |
 
-**Takeaway:** LPs care most about fund-level risk-adjusted outcomes, while GPs balance portfolio construction and founders focus on company survival.
+**Takeaway:** LPs care most about fund-level risk-adjusted outcomes and liquidity timing, while GPs balance portfolio construction, fee sustainability, and carry potential; founders focus on company survival and growth.
 
 ### Implications: Worked example with numbers
 
@@ -194,7 +202,7 @@ The table below shows how fees reduce investable capital and how carry is calcul
 | Gross fund return | 3× | \$300M |
 | Carry to GPs | 20% of profits (\$200M) | \$40M |
 
-**Takeaway:** Fees shrink capital available for deals, while carry compounds GP upside only after LPs are repaid.
+**Takeaway:** Fees shrink capital available for deals, while carry compounds GP upside only after LPs are repaid, illustrating why LPs scrutinize fee load and distribution pace.
 
 ### Implications: LP due diligence questions (checklist)
 
