@@ -125,6 +125,36 @@ flowchart LR
   </Tab>
 </Tabs>
 
+### Fund cash flows across a 10-year life
+
+Funds follow a predictable cash flow arc: **fees and capital calls early, deployment mid-cycle, and distributions late**.
+
+| Year range | Net cash flow pattern | What’s happening | LP implication |
+| --- | --- | --- | --- |
+| 0–2 | Outflows dominate | Management fees begin; capital calls for initial investments | Expect negative cash flow (J-curve starts). |
+| 3–5 | Peak outflows | Follow-ons, reserves, and ongoing fees | Most committed capital is called. |
+| 6–8 | Mixed flows | First exits and partial distributions | DPI starts to climb; TVPI stabilizes. |
+| 9–10+ | Inflows dominate | Realizations and tail-end exits | DPI catches up to TVPI; liquidity event window. |
+
+**Cash flow drivers by category**
+- **Fees:** Paid annually from committed capital (often step down after the investment period).
+- **Deployment:** Capital calls fund new investments and follow-ons; pacing depends on strategy and market cycle.
+- **Distributions:** Cash or stock from exits; early distributions improve DPI and reduce perceived risk.
+
+### Performance metrics: DPI, TVPI, and IRR
+
+Use these metrics together to see **liquidity timing** and **total value**.
+
+- **DPI (Distributions to Paid-In):** Cash returned ÷ capital called.  
+  **Example:** \$30M distributed on \$60M paid-in = **0.5× DPI**.  
+  **Interpretation:** Below 1.0× means LPs have not received back their capital yet.
+- **TVPI (Total Value to Paid-In):** (Distributions + remaining NAV) ÷ paid-in.  
+  **Example:** \$30M distributed + \$45M NAV = \$75M on \$60M paid-in = **1.25× TVPI**.  
+  **Interpretation:** Captures total value, but can be inflated by unrealized marks.
+- **IRR (Internal Rate of Return):** Time-weighted annualized return based on cash flow timing.  
+  **Example:** \$60M called over years 1–3 and \$120M distributed in year 8 yields **~10–12% IRR** (timing sensitive).  
+  **Interpretation:** High IRR can come from early small exits; compare alongside DPI/TVPI to avoid timing bias.
+
 ### Chapter 3: Investor vs. founder perspective
 
 Use this lens table to compare priorities by stakeholder so you can see where incentives align or diverge.
@@ -153,16 +183,37 @@ The table below shows how fees reduce investable capital and how carry is calcul
 
 **Takeaway:** Fees shrink capital available for deals, while carry compounds GP upside only after LPs are repaid.
 
-### Mini-exercise: LP diligence checklist
+### LP due diligence questions (checklist)
 
-Review a hypothetical GP pitch deck and answer:
+Use this checklist when reviewing a GP pitch deck.
 
-1. What is the fund’s target DPI, TVPI, and IRR, and how do they compare to prior funds?
+1. What is the target DPI/TVPI/IRR, and how does it compare to prior funds?
 2. How much GP commitment is there, and who is providing it?
-3. What is the fee schedule over the fund life (including step-downs)?
-4. How concentrated is the portfolio strategy by stage, sector, and geography?
-5. What are the terms and governance rights granted to the LPAC?
+3. What is the fee schedule (including step-downs after the investment period)?
+4. What is the carry structure, hurdle rate, and clawback mechanics?
+5. How concentrated is the portfolio strategy by stage, sector, and geography?
 6. How are reserves for follow-on investments determined?
+7. What is the expected capital call pacing and deployment period?
+8. What are the fund extension terms and LPAC approval thresholds?
+9. What key person provisions or team succession plans exist?
+10. How does the GP source and win deals versus competitors?
+11. What are the valuation and marking policies for unrealized assets?
+12. Are there co-investment rights or side-letter terms offered?
+13. What ESG, compliance, or conflict management policies are in place?
+14. What transparency and reporting cadence should LPs expect?
+
+### Negotiation case: Horizon Seed Fund III
+
+**Scenario:** Horizon Seed Fund III targets \$180M. The GP wants 2.25% fees for years 1–5, 20% carry, and a 2-year fund extension option. A lead LP offers \$40M but asks for 2.0% fees, a 6% hurdle, and stronger key person terms.
+
+**Key terms and trade-offs**
+- **Fees vs. operating capacity:** Lower fees reduce LP cost but may limit platform resources.
+- **Hurdle rate:** LPs want a preferred return; GPs argue seed outcomes are volatile.
+- **Key person trigger:** LPs seek protection if a partner leaves; GPs want flexibility.
+- **Extension rights:** LPs want tighter LPAC control; GPs want time to realize exits.
+- **Co-investment rights:** LPs want access to top deals; GPs worry about allocation complexity.
+
+**Decision prompt:** Propose a compromise package that keeps the fund viable while strengthening LP protections.
 
 ### Chapter 5: Summary checklist
 
@@ -292,6 +343,25 @@ Review a hypothetical GP pitch deck and answer:
   </Accordion>
   <Accordion title="What is a clawback?">
     **Answer:** A mechanism to return excess carry to LPs if later losses occur.
+  </Accordion>
+  <Accordion title="If DPI is 0.4× and TVPI is 1.3×, what does that imply?">
+    **Answer:** Most value is still unrealized; liquidity is limited despite marked value.
+  </Accordion>
+  <Accordion title="Why might a fund show high IRR but modest TVPI?">
+    **Answer:** Early exits boost time-weighted returns, but total value creation may be limited.
+  </Accordion>
+</AccordionGroup>
+
+## Applied Exercises
+
+<AccordionGroup>
+  <Accordion title="Exercise 1: Calculate fund metrics">
+    **Prompt:** A fund calls \$80M over years 1–4, has distributed \$40M, and has \$70M in NAV. Calculate DPI and TVPI.  
+    **Answer:** DPI = \$40M ÷ \$80M = **0.50×**. TVPI = (\$40M + \$70M) ÷ \$80M = **1.375×**.
+  </Accordion>
+  <Accordion title="Exercise 2: Negotiate terms">
+    **Prompt:** An LP offers a \$25M anchor commitment if fees step down from 2% to 1.5% after year 5 and the GP commit rises to 2%. Suggest one GP-friendly concession that preserves alignment.  
+    **Answer:** Offer a modest carry increase on returns above a higher hurdle (e.g., 22% carry above 2.0×) or a defined extension option with LPAC approval.
   </Accordion>
 </AccordionGroup>
 
