@@ -24,6 +24,81 @@ body {
   color: var(--brand-ink);
 }
 
+.landing-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: 32px;
+  align-items: center;
+}
+
+.landing-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--brand-primary-strong);
+  margin-bottom: 12px;
+}
+
+.hero-value {
+  font-size: 1.1rem;
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+
+.hero-secondary {
+  font-weight: 600;
+}
+
+.section-spacing {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.section-divider {
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(90deg, transparent, var(--brand-border), transparent);
+  margin: 0;
+}
+
+.landing-steps-grid,
+.landing-card-grid {
+  align-items: stretch;
+}
+
+.landing-card-grid,
+.landing-steps-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.landing-steps-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.landing-card-grid .card,
+.landing-steps-grid .card,
+.landing-card-grid [data-component='card'],
+.landing-steps-grid [data-component='card'] {
+  height: 100%;
+}
+
+.card-cta {
+  display: inline-flex;
+  margin-top: 12px;
+  font-weight: 600;
+  color: var(--brand-primary-strong);
+}
+
 a {
   color: var(--brand-primary-strong);
   text-decoration-thickness: 2px;
@@ -206,4 +281,26 @@ li.task-list-item:last-child {
 li.task-list-item input[type='checkbox'] {
   margin-top: 4px;
   accent-color: var(--brand-primary);
+}
+
+@media (max-width: 1024px) {
+  .landing-hero {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .landing-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .landing-card-grid,
+  .landing-steps-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .section-spacing {
+    margin-top: 36px;
+    margin-bottom: 36px;
+  }
 }
