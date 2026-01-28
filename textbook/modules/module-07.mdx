@@ -62,27 +62,27 @@ Focus on the core venture finance decisions tied to **Module 7**: opportunity se
 ## Module Tasks
 
 <Callout type="tip" title="Module Tasks">
-- [ ] Construct a funding strategy for a venture using at least two non-venture capital (VC) sources and explain sequencing.
-- [ ] Identify the top three risks of your chosen financing mix and mitigation steps.
+- [ ] Construct a funding strategy for a venture using at least two non-venture capital (VC) sources and explain the sequencing logic behind each source.
+- [ ] Identify the top three risks of your chosen financing mix and describe concrete mitigation steps for each risk.
 </Callout>
 
 ## Key Concepts
 
-- **Cap table:** Ownership ledger of shares and percentages.
-- **Fully diluted basis:** Assumes all options/convertibles are exercised.
-- **Option pool shuffle:** Pre-money pool creation that dilutes founders.
-- **Pro forma cap table:** Post-transaction ownership model.
-- **Conversion mechanics:** Simple Agreement for Future Equity (SAFE) notes converting into equity.
+- **Cap table:** The ownership ledger that records every class of equity, the share counts, and each stakeholder’s percentage over time.
+- **Fully diluted basis:** A view of ownership that assumes every option, warrant, and convertible instrument is exercised or converted into shares.
+- **Option pool shuffle:** A negotiation tactic in which a pre-money option pool is created or resized so founders absorb additional dilution.
+- **Pro forma cap table:** A forward-looking model that shows post-transaction ownership after applying new money, pools, and conversions.
+- **Conversion mechanics:** The rules that describe how SAFE or convertible note terms convert into equity, including caps, discounts, and valuation impacts.
 
 ## Main Content
 
 ### Chapter 1: Definitions and dilution mechanics
 
-Cap tables track **ownership**, **options**, and **dilution** across rounds.
+Cap tables track **ownership**, **options**, and **dilution** across rounds so founders and investors can see how financing decisions change control.
 
-- **Fully diluted shares:** All shares including options and convertibles.
-- **Pro rata rights:** Right to maintain ownership in future rounds.
-- **Option pool shuffle:** Pool size and timing shift dilution.
+- **Fully diluted shares:** The total share count after assuming all options, warrants, and convertibles are exercised or converted.
+- **Pro rata rights:** The contractual right for existing investors to buy enough new shares in future rounds to maintain their ownership percentage.
+- **Option pool shuffle:** The timing and size of the option pool that determine who absorbs dilution before a round closes.
 
 <Callout type="note" title="Dilution is not always bad">
 If new capital increases enterprise value faster than ownership falls, founders can still win.
@@ -113,6 +113,8 @@ If new capital increases enterprise value faster than ownership falls, founders 
 
 ### Chapter 3: Investor vs. founder perspective
 
+Use the comparison below to anchor how the same dilution topic can look different depending on stakeholder incentives.
+
 | Dimension | Founder lens | Investor lens | Implication |
 | --- | --- | --- | --- |
 | Dilution | Preserve control | Fund company growth | Balance trade-offs |
@@ -120,18 +122,22 @@ If new capital increases enterprise value faster than ownership falls, founders 
 | Pool size | Smaller now | Hire future team | Pool timing matters |
 | SAFEs | Simple | Valuation cap risk | Convertibles shift math |
 
+Summary: Aligning these perspectives early helps prevent conflict over ownership targets and follow-on participation.
+
 ### Chapter 4: Worked example with numbers
 
 **Scenario:** Seed and Series A with a 15% option pool.
 
 Use the round-by-round table to translate valuation and new money into dilution checkpoints for founders and new investors.
 
+Before reviewing the numbers, focus on how pre-money valuation and check size combine to set each round’s ownership split.
+
 | Round | Pre-money | New Money | Post-money | Founder % (fully diluted) |
 | --- | --- | --- | --- | --- |
 | Seed | \$6M | \$2M | \$8M | 65% |
 | Series A | \$18M | \$6M | \$24M | 45% |
 
-**Takeaway:** Each round compresses founder ownership; the size of the new check and the pre-money valuation jointly determine the drop.
+Summary: Each round compresses founder ownership; the size of the new check and the pre-money valuation jointly determine the drop.
 
 **Cap table after Series A (simplified)**
 
@@ -144,9 +150,11 @@ The cap table below converts the round math into a clean ownership snapshot you 
 | Series A investors | 25% |
 | Option pool (unallocated) | 10% |
 
-**Takeaway:** A simplified cap table is a communication tool—use it to align on who owns what before moving on to preferences and control rights.
+Summary: A simplified cap table is a communication tool—use it to align on who owns what before moving on to preferences and control rights.
 
 **Dilution timeline (founder ownership)**
+
+The timeline provides a quick visual gut check to see how ownership steps down across rounds.
 
 | Round | Founder ownership | Visual |
 | --- | --- | --- |
@@ -154,23 +162,29 @@ The cap table below converts the round math into a clean ownership snapshot you 
 | Seed | 65% | ███████░░░ 65% |
 | Series A | 45% | █████░░░░░ 45% |
 
-Use the timeline as a quick gut check before you finalize a more detailed model with actual share counts.
+Summary: A visual timeline is useful for quick stakeholder alignment before you finalize a detailed share model.
 
 #### Full round-by-round cap table (shares + percentages)
 
 **Assumptions**
-- Founders start with **8,000,000 shares**.
-- **Seed:** \$2M on \$6M pre (post \$8M) with a **10% post-money option pool** created pre-money.
-- **Series A:** \$6M on \$18M pre (post \$24M) with a **15% post-money pool refresh**.
+- Founders start with **8,000,000 shares** so the initial cap table is simple to scale.
+- **Seed:** \$2M on \$6M pre (post \$8M) with a **10% post-money option pool** created pre-money to support early hires.
+- **Series A:** \$6M on \$18M pre (post \$24M) with a **15% post-money pool refresh** to sustain the next hiring phase.
 
 **Round 0: Founding**
+
+Use the baseline table to anchor every later dilution calculation in a concrete share count.
 
 | Holder | Shares | Ownership % |
 | --- | --- | --- |
 | Founders | 8,000,000 | 100.0% |
 | **Total** | **8,000,000** | **100.0%** |
 
+Summary: The founding table sets the denominator that every subsequent round expands.
+
 **Round 1: Seed close (post-money)**
+
+This table shows how the seed investors and the option pool together reduce founder ownership.
 
 | Holder | Shares | Ownership % |
 | --- | --- | --- |
@@ -179,7 +193,11 @@ Use the timeline as a quick gut check before you finalize a more detailed model 
 | Option pool (unallocated) | 1,230,769 | 10.0% |
 | **Total** | **12,307,692** | **100.0%** |
 
+Summary: Even without issuing new founder shares, the denominator expansion dilutes founders to 65%.
+
 **Round 2: Series A close (post-money)**
+
+This table adds the Series A investors and a refreshed pool to show the full dilution stack.
 
 | Holder | Shares | Ownership % |
 | --- | --- | --- |
@@ -189,16 +207,20 @@ Use the timeline as a quick gut check before you finalize a more detailed model 
 | Option pool (unallocated) | 2,769,231 | 15.0% |
 | **Total** | **18,461,538** | **100.0%** |
 
-**Takeaway:** The share counts make dilution concrete—pool top-ups and new money change both the denominator and the ownership split.
+Summary: The share counts make dilution concrete—pool top-ups and new money change both the denominator and the ownership split.
 
 ### Pool timing explainer (pre- vs. post-money pool)
 
 **Setup:** Founders have **8,000,000 shares**, raise **\$2M on an \$8M pre** (post \$10M). Target a **10% option pool**.
 
+The table below isolates the effect of pool timing so you can compare outcomes without changing any other variables.
+
 | Pool timing | Founder % | Investor % | Pool % | What changes? |
 | --- | --- | --- | --- | --- |
 | **Pre-money pool** (created before financing) | 70.0% | 20.0% | 10.0% | Founders absorb pool dilution upfront. |
 | **Post-money pool** (created after financing) | 72.0% | 18.0% | 10.0% | Founders + investors share the pool dilution. |
+
+Summary: Pool timing shifts who pays for future hires, even when the pool size is identical.
 
 **Numeric detail (pre-money pool):** Total post shares = 11,428,571. Founders 8,000,000 (70.0%), investors 2,285,714 (20.0%), pool 1,142,857 (10.0%).
 
@@ -213,23 +235,29 @@ Use the timeline as a quick gut check before you finalize a more detailed model 
 - **Series A:** \$8M on \$24M pre (post \$32M). New investors want **25% post**.
 - **Pro rata:** Seed fund has the right to maintain its 20% ownership.
 
+The decision fork below shows how the same round plays out depending on whether pro rata is fully honored.
+
 **Decision fork**
 - **Allow pro rata:** Seed fund invests \$6.4M (20% of the \$32M post) and keeps 20%. Founders drop to **45%**, angels to **7.5%**, pool to **7.5%**.
 - **Limit pro rata:** Seed fund invests \$3.2M (half its right). Seed drops to **10%**, founders land at **50%**, angels at **10%**, pool at **10%**, new investors increase to **30%**.
+
+Summary: The pro rata choice reallocates dilution between insiders and new money, which changes both capital raised and relationship dynamics.
 
 **Founder takeaway:** Allowing pro rata can preserve supportive insiders but increases new-money size or founder dilution; limiting it preserves founder % but can strain investor relationships.
 
 ### Dilution risk management checklist
 
-- [ ] Model every round on a **fully diluted** basis (include SAFEs and options).
-- [ ] Tie **option pool size** to a hiring plan, not a default %.
-- [ ] Negotiate **pool timing** (pre vs. post) and quantify the impact.
-- [ ] Track **ownership thresholds** (50%, 33%, 10%) for control and veto.
-- [ ] Pressure-test **downside cases** (down round, flat round, bridge).
-- [ ] Decide **pro rata policy** early and communicate it in the data room.
-- [ ] Revisit dilution quarterly as valuations and hiring change.
+- [ ] Model every round on a **fully diluted** basis so options, SAFEs, and convertibles are not overlooked.
+- [ ] Tie **option pool size** to a hiring plan, not a default %, to avoid unnecessary founder dilution.
+- [ ] Negotiate **pool timing** (pre vs. post) and quantify the impact so trade-offs are explicit.
+- [ ] Track **ownership thresholds** (50%, 33%, 10%) for control and veto rights as financing progresses.
+- [ ] Pressure-test **downside cases** (down round, flat round, bridge) to anticipate dilution shocks.
+- [ ] Decide **pro rata policy** early and communicate it in the data room to reduce surprises.
+- [ ] Revisit dilution quarterly as valuations and hiring change to keep forecasts current.
 
 ### Chapter 5: Summary checklist
+
+Use the checklist below to consolidate the steps into a repeatable workflow.
 
 <Steps>
   <Step title="Build the table">
@@ -243,6 +271,8 @@ Use the timeline as a quick gut check before you finalize a more detailed model 
   </Step>
 </Steps>
 
+Summary: The workflow emphasizes modeling, hiring alignment, and negotiated protections to manage dilution.
+
 ## Key Takeaways
 
 <Callout type="success" title="Key Takeaways">
@@ -255,261 +285,6 @@ Use the timeline as a quick gut check before you finalize a more detailed model 
 
 ### In-class activity: “Dilution Dash”
 
-- **GameCo simulation:** founders start with 100k shares (100%).
-- **Round 1:** Angel invests \$500k for 20% → founders drop to 80%.
-- **Round 2:** Create 10% option pool → founders to 72%, angel to 18%, pool 10%.
-- **Round 3:** Series A investor takes 25% post → founders ~54%, angel ~13.5%, pool ~7.5%.
-- **Round 4:** Optional down round shows anti-dilution effects.
-- **Debrief:** Percentages drop but company value grows; plan pool size and valuation.
-
-### Case study: UrbanGardens dilution journey
-
-- **Seed:** \$500k on \$4.5M pre (\$5M post), 5% pre-money pool; founders drop from 90% to ~76.5%.
-- **Series A:** \$3M on \$15M pre; pool topped to 10% post; Series A VC ~20%.
-- **Series B dilemma:** \$10M on \$40M pre with another pool refresh; founders risk falling below 40%.
-- **Trade-offs:** Raise less to reduce dilution vs. raise more to hit milestones faster.
-
-### Mini-exercise: Model a Series A with option pool refresh
-
-Use the inputs below to build a quick pro forma cap table.
-
-| Input | Value |
-| --- | --- |
-| Current fully diluted shares | 10,000,000 |
-| Current ownership | Founders 65%, Seed investors 25%, Option pool 10% |
-| Series A pre-money valuation | \$18M |
-| Series A new money | \$6M |
-| Target post-money option pool | 15% |
-
-**Your tasks**
-- Calculate the Series A price per share.
-- Determine how many new shares the Series A investors receive.
-- Refresh the option pool to 15% post-money and compute the new ownership percentages.
-
-### Discussion prompts and teaching notes
-
-- **Reconstruct UrbanGardens ownership through Seed and Series A.**
-  - Teaching note: Focus on pool timing and founder dilution.
-- **Model a \$10M raise on \$40M pre with pool top-up.**
-  - Teaching note: New investors get 20% post; pool reduces pre-money holders.
-- **Is founder control still intact below 50%?**
-  - Teaching note: Voting rights and board control matter more than raw %.
-- **Should founders raise less to reduce dilution?**
-  - Teaching note: Balance runway needs vs. incremental dilution from extra rounds.
-- **How should founders approach option pool sizing?**
-  - Teaching note: Size to hiring plan and negotiate pool timing.
-
-## Pitfalls
-
-<Callout type="warning" title="Pitfalls to Avoid">
-- Ignoring fully diluted ownership when discussing percentages.
-- Underestimating option pool dilution or SAFE cap effects.
-- Failing to model future rounds and control thresholds.
-- Over-focusing on percentage instead of absolute value creation.
-</Callout>
-
-## Quick Checks
-
-<Tabs>
-  <Tab title="Founder perspective">
-    Decide whether you would accept a 10% pre-money option pool and explain why.
-  </Tab>
-  <Tab title="Investor perspective">
-    Identify what ownership % you need to justify a \$5M investment at this stage.
-  </Tab>
-</Tabs>
-
-<AccordionGroup>
-  <Accordion title="Dilution math">
-    **Question:** If founders own 1,000,000 shares and you add 250,000 new shares, what is founder ownership?  
-    **Answer:** 80%.
-  </Accordion>
-  <Accordion title="SAFE surprise">
-    **Question:** Why can a low cap SAFE create a “cap table time bomb”?  
-    **Answer:** It converts to more shares than expected, diluting founders and new investors.
-  </Accordion>
-  <Accordion title="Fully diluted reminder">
-    **Question:** What instruments are included in fully diluted ownership?  
-    **Answer:** Options, warrants, convertibles, and SAFE conversions.
-  </Accordion>
-</AccordionGroup>
-
-<details>
-<summary>What is a cap table and why is it important?</summary>
-
-Tracks ownership, dilution, and voting control.
-</details>
-
-<details>
-<summary>How does a financing round dilute shareholders?</summary>
-
-New shares increase total count, reducing %.
-</details>
-
-<details>
-<summary>What does fully diluted mean?</summary>
-
-Assumes all options and convertibles are exercised.
-</details>
-
-<details>
-<summary>How do option pools affect ownership?</summary>
-
-Pre-money pools dilute founders before new money.
-</details>
-
-<details>
-<summary>Why model future rounds?</summary>
-
-To anticipate dilution and plan fundraising strategy.
-</details>
-
-<details>
-<summary>What happens on exit?</summary>
-
-Cap table plus preferences determine payouts via a waterfall.
-</details>
-
-## Readings
-
-### Required Readings
-
-- **Ryan (2024). American Bar Association (ABA) cap table math.** Step-by-step dilution math with pool timing effects.
-- **MaRS Discovery District (MaRS) Startup Toolkit (2022).** Practical cap table management and best practices.
-- **Stripe Atlas (2021).** Definitions and fundraising impacts of cap tables.
-
-### Optional Readings
-
-- **Carta (2023).** Dilution sources and planning scenarios.
-- **Cake Equity (2022).** Cap table modeling case studies and SAFE surprises.
-
-## Summary
-
-- Cap tables tell the ownership story; dilution is unavoidable but manageable.
-- Fully diluted and pro forma views prevent surprise dilution.
-- Option pools and SAFE caps are major dilution drivers.
-
-## Practice Questions
-
-**Question:** What is included in fully diluted shares?  
-<details>
-<summary>Show answer</summary>
-
-**Answer:** All common, preferred, options, and convertibles.
-</details>
-
-**Question:** Why do investors seek pro rata rights?  
-<details>
-<summary>Show answer</summary>
-
-**Answer:** To maintain ownership in high-performing companies.
-</details>
-
-**Question:** If a 10% option pool is added pre-money, who bears the dilution?  
-<details>
-<summary>Show answer</summary>
-
-**Answer:** Founders (and existing shareholders) bear it first.
-</details>
-
-**Question:** If pre-money is \$8M and you raise \$2M, what is post-money?  
-<details>
-<summary>Show answer</summary>
-
-**Answer:** \$10M.
-</details>
-
-**Question:** Why can SAFEs complicate cap table forecasts?  
-<details>
-<summary>Show answer</summary>
-
-**Answer:** Conversion happens later and can be at variable caps/discounts.
-</details>
-
-**Question:** When is dilution acceptable?  
-<details>
-<summary>Show answer</summary>
-
-**Answer:** When capital increases enterprise value faster than ownership decreases.
-</details>
-
-**Question:** If founders own 8,000,000 of 12,307,692 shares, what is their ownership percentage?  
-<details>
-<summary>Show answer</summary>
-
-**Answer:** 65.0%.
-</details>
-
-**Question:** Why might founders prefer a post-money option pool?  
-<details>
-<summary>Show answer</summary>
-
-**Answer:** It spreads pool dilution across founders and new investors instead of founders alone.
-</details>
-
-**Question:** In a \$24M post-money round, what % ownership does a \$6M investor receive?  
-<details>
-<summary>Show answer</summary>
-
-**Answer:** 25%.
-</details>
-
-**Question:** What is the main trade-off of granting full pro rata rights to early investors?  
-<details>
-<summary>Show answer</summary>
-
-**Answer:** It preserves insider ownership but can reduce founder % or increase total new money required.
-</details>
-
-**Question:** Why do cap tables track fully diluted shares rather than just issued shares?  
-<details>
-<summary>Show answer</summary>
-
-**Answer:** Because options, SAFEs, and convertibles can become shares and materially change ownership.
-</details>
-
-**Question:** When would a founder accept more dilution?  
-<details>
-<summary>Show answer</summary>
-
-**Answer:** When the added capital significantly raises enterprise value or accelerates milestones.
-</details>
-
-**Question:** What does a pool “top-up” do to existing shareholders?  
-<details>
-<summary>Show answer</summary>
-
-**Answer:** It increases total shares, diluting existing holders to restore the pool to a target %.
-</details>
-
-## Mini-Exercises
-
-**Mini-Exercise 1: Seed round pricing**
-
-You have 5,000,000 founder shares. A seed investor puts in \$1.5M at a \$6M pre-money valuation.  
-**Tasks:** (1) price per share, (2) new investor shares, (3) post-money ownership %.
-
-<details>
-<summary>Show answer</summary>
-
-**Answer:**  
-- Price per share = \$6M / 5,000,000 = **\$1.20**.  
-- New investor shares = \$1.5M / \$1.20 = **1,250,000**.  
-- Post-money shares = 6,250,000 → investor **20%**, founders **80%**.
-</details>
-
-**Mini-Exercise 2: Pool timing comparison**
-
-Founders own 9,000,000 shares. Raise \$3M on a \$12M pre (post \$15M) with a 10% option pool.  
-**Task:** Compare founder % with a **pre-money** pool vs a **post-money** pool.
-
-<details>
-<summary>Show answer</summary>
-
-**Answer:**  
-- **Pre-money pool:** Founders = 70%, investors = 20%, pool = 10%.  
-- **Post-money pool:** Founders ≈ 72.0%, investors ≈ 18.0%, pool = 10%.  
-Founders retain ~2 percentage points more with a post-money pool.
-</details>
-
-<ModuleNav previous="/textbook/modules/module-06" previousLabel="Module 6: Term Sheet Mechanics" next="/textbook/modules/module-08" nextLabel="Module 8: Investor–Founder Dynamics" />
+- **GameCo simulation:** Founders start with 100k shares, which represents 100% ownership at formation.
+- **Round 1:** An angel invests \$500k for 20%, reducing founders to 80% on a fully diluted basis.
+- **Round 2:** The company creates a 10% option pool, which moves founders to 72%, the angel to 18%, and leaves 10% for the pool.
