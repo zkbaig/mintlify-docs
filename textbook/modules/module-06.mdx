@@ -91,6 +91,13 @@ Term sheets set the **economic** and **control** rights of a deal.
 A “high valuation” can still be founder-unfriendly if control terms are strict.
 </Callout>
 
+| Term category | What it covers | Why it matters | Typical founder concern | Implication in practice |
+| --- | --- | --- | --- | --- |
+| **Economic terms** | Valuation, liquidation preference, participation, dividends, option pool | Determine **who gets paid and how much** in an exit | “Will we get rewarded if the company performs?” | A 1× participating pref can reduce common payouts at mid-tier exits even with a strong valuation. |
+| **Control terms** | Board seats, protective provisions, consent rights, vetoes | Define **who decides** on major actions | “Can we move fast and keep strategic control?” | A single investor veto can block financings, acquisitions, or founder compensation changes. |
+| **Downside protection** | Anti-dilution, pay-to-play, redemption rights | Shift risk when performance lags | “How much control or ownership do we lose in a down round?” | Full-ratchet anti-dilution can reset the investor price, increasing dilution in the next round. |
+| **Liquidity timing** | Drag-along, registration rights, redemption triggers | Influence exit path and timing | “Can we be forced into a sale or IPO?” | Drag-along can accelerate an exit even if some founders prefer to stay independent. |
+
 <CardGroup>
   <Card title="Economic terms" icon="wallet">
     Valuation, preference, and participation define payouts.
@@ -153,6 +160,62 @@ flowchart LR
   D --> I[Common receives what is left]
 ```
 
+### Chapter 5: Liquidation preference waterfall (step-by-step)
+
+**Scenario:** \$6M Series A at \$18M pre (25% ownership), 1× **non-participating** preference.
+
+**Cap table (post-money):**
+- Founders: 60%
+- Employee option pool: 15%
+- Series A investors: 25%
+
+**Waterfall logic:**
+1. Investor chooses **greater of** (a) 1× preference or (b) pro-rata common.
+2. Everyone else splits the remaining proceeds pro-rata.
+
+| Exit value | 1× preference amount | Investor pro-rata (25%) | Investor chooses | Common pool (founders + option) | Founder payout (60% of common) | Option pool payout (15% of common) |
+| --- | --- | --- | --- | --- | --- | --- |
+| \$8M | \$6M | \$2M | \$6M pref | \$2M | \$1.2M | \$0.3M |
+| \$20M | \$6M | \$5M | \$6M pref | \$14M | \$8.4M | \$2.1M |
+| \$40M | \$6M | \$10M | \$10M pro-rata | \$30M | \$18M | \$4.5M |
+| \$100M | \$6M | \$25M | \$25M pro-rata | \$75M | \$45M | \$11.25M |
+
+**Takeaway:** Non-participating preferences mostly matter in **low-to-mid exits**. At high exits, the investor converts and participates like common.
+
+### Chapter 6: How board control evolves across rounds
+
+Board control usually shifts from founder-led to shared governance as new investors join.
+
+**Example cap table across rounds**
+
+| Round | Founders | Seed investors | Series A | Series B | Employee pool | Notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| Seed close | 70% | 20% | — | — | 10% | Founder control and early investor influence |
+| Series A | 55% | 15% | 20% | — | 10% | Investor adds governance leverage |
+| Series B | 45% | 10% | 18% | 20% | 7% | Control becomes shared with independents |
+
+**Example board seat evolution**
+
+| Stage | Board seats | Typical composition | Control implication |
+| --- | --- | --- | --- |
+| Seed (3 seats) | 3 | 2 founders, 1 seed investor | Founders retain majority control. |
+| Series A (5 seats) | 5 | 2 founders, 2 investors, 1 independent | Balanced control; independent often becomes swing vote. |
+| Series B (7 seats) | 7 | 2 founders, 3 investors, 2 independents | Investors can control if independents align with them. |
+
+**Key lesson:** Board control is less about ownership percentage and more about **seat math** and who can assemble a voting majority.
+
+### Chapter 7: Term trade-off lab
+
+Pick the package you would accept **and justify why**, referencing economics vs. control trade-offs.
+
+| Package | Valuation | Liquidation preference | Board seats | Anti-dilution | Other terms |
+| --- | --- | --- | --- | --- | --- |
+| **A: High valuation, heavy control** | \$30M pre | 1× participating | 2 founders / 2 investors / 1 independent (independent chosen by investors) | Full ratchet | 18% pre-money option pool |
+| **B: Balanced economics and control** | \$24M pre | 1× non-participating | 2 founders / 2 investors / 1 independent (mutual) | Broad-based weighted average | 12% pre-money option pool |
+| **C: Lower valuation, clean terms** | \$20M pre | 1× non-participating with 2× cap on participation | 2 founders / 1 investor / 2 independents (mutual) | Narrow-based weighted average | 10% pre-money option pool |
+
+**Prompt:** Choose one package, explain the trade-offs, and propose **one change** that would make the chosen package acceptable.
+
 <Callout type="info" title="Mini-exercise: Negotiate a trade-off">
 Pick one concession you would accept to improve liquidation terms, then explain why.
 
@@ -162,7 +225,7 @@ Pick one concession you would accept to improve liquidation terms, then explain 
 - [ ] Accept a smaller option pool if the no-shop window is shortened.
 </Callout>
 
-### Chapter 5: Summary checklist
+### Chapter 8: Summary checklist
 
 <Steps>
   <Step title="Separate economics from control">
@@ -330,5 +393,67 @@ Pick one concession you would accept to improve liquidation terms, then explain 
 
 **Answer:** Clean terms often matter more over the long run.
 </details>
+
+**Question:** In a 1× non-participating preference, when does the investor convert to common?  
+<details>
+<summary>Show answer</summary>
+
+**Answer:** When the pro-rata common payout exceeds the 1× preference amount.
+</details>
+
+**Question:** Why can a founder still lose control with a majority ownership stake?  
+<details>
+<summary>Show answer</summary>
+
+**Answer:** Board seat math and protective provisions can shift control even if founders own more shares.
+</details>
+
+**Question:** How does a full ratchet anti-dilution clause affect founders in a down round?  
+<details>
+<summary>Show answer</summary>
+
+**Answer:** It resets the investor price to the down-round price, increasing founder dilution.
+</details>
+
+**Question:** What is one reason investors ask for a larger option pool pre-money?  
+<details>
+<summary>Show answer</summary>
+
+**Answer:** It ensures the company can hire talent without the investors funding the dilution themselves.
+</details>
+
+**Question:** In the example waterfall, why does the investor choose the preference at a \$20M exit?  
+<details>
+<summary>Show answer</summary>
+
+**Answer:** The \$6M preference is larger than the \$5M pro-rata common payout.
+</details>
+
+**Question:** Which board composition is most likely to preserve founder influence: 2F/2I/1Ind (investor-chosen) or 2F/1I/2Ind (mutual)?  
+<details>
+<summary>Show answer</summary>
+
+**Answer:** 2F/1I/2Ind (mutual), because founders are less likely to be outvoted by investor-aligned independents.
+</details>
+
+## Mini-Cases
+
+<AccordionGroup>
+  <Accordion title="Mini-case 1: The mid-exit squeeze">
+    **Scenario:** NimbusAI raises \$8M at a \$32M pre with a 1× participating preference and a 20% option pool. The company exits for \$45M.  
+    **Prompt:** Explain why founders feel squeezed despite a headline 4× return on the investment.  
+    **Answer (spoiler):** The participating preference returns the \$8M first, then investors take their pro-rata share of the remaining \$37M. This meaningfully reduces the common pool at a mid-range exit and can make a “good” exit feel disappointing to founders.
+  </Accordion>
+  <Accordion title="Mini-case 2: Board control drift">
+    **Scenario:** ApexHealth has a 5-seat board: 2 founders, 2 investors, and 1 independent chosen by investors. Founders still own 55%.  
+    **Prompt:** How could founders lose control of a major strategic decision?  
+    **Answer (spoiler):** The investor-chosen independent can align with the investors, creating a 3–2 voting bloc that can override founder preferences even with majority ownership.
+  </Accordion>
+  <Accordion title="Mini-case 3: Term trade-off decision">
+    **Scenario:** You must choose between a higher valuation with full ratchet anti-dilution or a lower valuation with weighted-average anti-dilution.  
+    **Prompt:** Which package better protects founders in a down round, and why?  
+    **Answer (spoiler):** The lower valuation with weighted-average anti-dilution is generally safer for founders because it avoids the severe dilution impact of a full ratchet.
+  </Accordion>
+</AccordionGroup>
 
 <ModuleNav previous="/textbook/modules/module-05" previousLabel="Module 5: Startup Valuation Methods" next="/textbook/modules/module-07" nextLabel="Module 7: Cap Tables and Dilution" />
