@@ -99,6 +99,12 @@ Financial projections convert strategy into **numbers, timing, and cash**.
 A profitable income statement can still hide a cash crisis.
 </Callout>
 
+#### Cash vs. profitability (clarification)
+
+Profits measure **earned revenue minus expenses**, while cash flow reflects **when money actually moves**.
+
+**Concise example:** A startup books **\$120k** in annual subscriptions in January, but customers pay quarterly. It shows **\$10k/month** in revenue, but only **\$30k** cash comes in each quarter. If monthly expenses are **\$50k**, the company reports **\$-40k** operating loss in January yet still sees **negative cash flow** even as revenue grows, because cash collections lag expenses. The runway shrinks despite top-line growth.
+
 <CardGroup>
   <Card title="Revenue drivers" icon="chart-column">
     Pricing, conversion, and retention assumptions that power the model.
@@ -130,6 +136,27 @@ A profitable income statement can still hide a cash crisis.
   <img src="/images/module-03-driver-model.svg" alt="Diagram showing revenue, cost, and working capital drivers feeding financial statements and burn/runway." />
 </Callout>
 
+#### Modeling from drivers
+
+Use a short list of measurable drivers to build output lines. Keep the chain explicit:
+
+- **Leads → Paid customers:** Leads × conversion rate → New customers.
+- **Customers → MRR:** Active customers × price per month → MRR.
+- **MRR → Gross profit:** MRR × gross margin % → Gross profit.
+- **Gross profit → Net burn:** Gross profit − operating expenses → Net burn.
+- **Net burn → Runway:** Cash balance ÷ net burn → Months of runway.
+
+**Simple unit economics template**
+
+| Metric | Formula | Example |
+| --- | --- | --- |
+| ARPU | Monthly revenue ÷ active customers | \$40 |
+| Gross margin | (Revenue − COGS) ÷ Revenue | 75% |
+| LTV | ARPU × gross margin ÷ churn | \$600 |
+| CAC | Sales + marketing spend ÷ new customers | \$200 |
+| LTV/CAC | LTV ÷ CAC | 3.0× |
+| CAC payback | CAC ÷ (ARPU × gross margin) | 6.7 months |
+
 ### Chapter 3: Investor vs. founder perspective
 
 | Dimension | Founder lens | Investor lens | Implication |
@@ -158,6 +185,18 @@ Takeaway: even modest MRR gains can materially lengthen runway when fixed costs 
 <Callout type="info" title="Burn and runway trend">
   <img src="/images/module-03-burn-runway.svg" alt="Line chart illustrating net burn declining and runway extending across months 1 to 12." />
 </Callout>
+
+#### Scenario expansion: base, downside, upside
+
+Use the same structure and swap only the key assumptions. Summarize outcomes side-by-side.
+
+| Scenario | Assumptions (12 months) | Summary outcomes |
+| --- | --- | --- |
+| **Base** | MRR grows **10%/mo**, churn **3%**, CAC **\$400**, opex grows **5%/qtr** | Month 12 MRR **\$90k**, avg burn **\$45k**, runway **~18 months** |
+| **Downside** | MRR grows **6%/mo**, churn **6%**, CAC **\$550**, opex grows **8%/qtr** | Month 12 MRR **\$60k**, avg burn **\$60k**, runway **~12 months** |
+| **Upside** | MRR grows **14%/mo**, churn **2%**, CAC **\$350**, opex grows **4%/qtr** | Month 12 MRR **\$115k**, avg burn **\$35k**, runway **~22 months** |
+
+**Interpretation:** The downside case is driven by churn and CAC pressure that slow net growth and lift spend, while the upside case compounds retention with lower acquisition cost to extend runway.
 
 ### Chapter 5: Summary checklist
 
@@ -330,6 +369,23 @@ Pick one pivot (churn or CAC) and estimate how runway changes.
   </Accordion>
 </AccordionGroup>
 
+### Sensitivity lab: churn, CAC, or pricing
+
+Pick one lever and quantify runway impact.
+
+1. **Choose a baseline:** 12 months runway, \$50k net burn, \$80 ARPU, 4% churn, \$400 CAC.
+2. **Run a sensitivity:**  
+   - **Churn:** increase to 7% and reduce net MRR growth by 25%.  
+   - **CAC:** increase to \$550 and add the incremental spend to opex.  
+   - **Pricing:** increase ARPU by 10% with no churn change.  
+3. **Interpret:** Identify which lever changes runway the most and explain why.
+
+<AccordionGroup>
+  <Accordion title="Sample interpretation">
+    **Answer:** Higher churn usually shortens runway most because it lowers retained revenue and slows compounding, while CAC spikes mainly add immediate burn. A pricing lift can offset modest CAC increases if churn stays flat.
+  </Accordion>
+</AccordionGroup>
+
 - **Why are projections valuable if they are inaccurate?** They surface assumptions, guide planning, and align fundraising to milestones.
 - **What is burn rate and why does it matter?** It determines runway and survival; investors watch it closely.
 - **Which unit economics matter most for startups?** Gross margin, CAC, LTV, ARPU, and churn depending on the model.
@@ -386,6 +442,41 @@ $$
   </Accordion>
   <Accordion title="What is a common milestone for a seed round?">
     **Answer:** Proof of product-market fit (e.g., retention and paid growth).
+  </Accordion>
+  <Accordion title="Which driver most directly controls MRR in a SaaS model?">
+    **Answer:** Active paid customers × price per month (ARPU).
+  </Accordion>
+  <Accordion title="If CAC rises but ARPU is flat, what happens to CAC payback?">
+    **Answer:** Payback lengthens because each customer takes longer to recover acquisition cost.
+  </Accordion>
+  <Accordion title="Why do investors stress-test churn in projections?">
+    **Answer:** Small churn changes compound over time and can erase growth and runway.
+  </Accordion>
+  <Accordion title="What does a 3.0× LTV/CAC ratio suggest?">
+    **Answer:** Generally healthy unit economics, assuming retention is stable.
+  </Accordion>
+  <Accordion title="What is the fastest way to extend runway without raising capital?">
+    **Answer:** Reduce net burn by cutting discretionary spend or improving gross margin.
+  </Accordion>
+  <Accordion title="How does slower collections affect cash even if revenue is rising?">
+    **Answer:** It delays cash inflows, shrinking cash balance and runway.
+  </Accordion>
+</AccordionGroup>
+
+## Short Exercises
+
+<AccordionGroup>
+  <Accordion title="Exercise 1: Driver linkage">
+    **Prompt:** Use 1,000 leads, 8% conversion, \$50 ARPU, and 80% gross margin. Estimate MRR and gross profit.  
+    **Answer:** 80 customers × \$50 = **\$4,000 MRR**; gross profit = **\$3,200**.
+  </Accordion>
+  <Accordion title="Exercise 2: Scenario delta">
+    **Prompt:** Base case burn is \$45k with 18 months runway. Downside increases burn to \$60k. With \$810k cash, what is runway?  
+    **Answer:** \$810k ÷ \$60k = **13.5 months**.
+  </Accordion>
+  <Accordion title="Exercise 3: Cash vs. profit">
+    **Prompt:** Revenue grows from \$50k to \$70k, but collections are delayed by 60 days and expenses are \$65k/month. What happens to cash?  
+    **Answer:** Cash still declines because inflows lag expenses, despite revenue growth.
   </Accordion>
 </AccordionGroup>
 
