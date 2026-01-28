@@ -1,3 +1,5 @@
+import { Card, CardGroup } from "@mintlify/mdx";
+
 export default function ModuleNav({
   previous,
   next,
