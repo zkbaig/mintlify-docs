@@ -119,6 +119,16 @@ Every valuation choice changes who owns what and who controls the board.
   </Tab>
 </Tabs>
 
+### When to use each method (by stage)
+
+| Stage | Best-fit method(s) | Rationale |
+| --- | --- | --- |
+| Idea/Pre-seed | Scorecard/Berkus | Limited financial history; emphasize team, market size, and product risk. |
+| Seed | VC method + early comps | Early traction exists, but exit math anchors expectations; comps provide a market sanity check. |
+| Series A/B | VC method + comps + scenario analysis | Clearer KPIs and comparables; scenario cases help capture execution risk. |
+| Growth/Late | Comps + DCF (if stable cash flows) | More predictable revenue allows cash-flow modeling; comps anchor market pricing. |
+| Pre-IPO | Comps + DCF | Market comparables and public metrics dominate negotiations. |
+
 ### Chapter 3: Investor vs. founder perspective
 
 | Dimension | Founder lens | Investor lens | Implication |
@@ -144,11 +154,74 @@ The cap table below shows **post-money ownership** after the seed round closes. 
 
 **Key takeaway:** Even with a healthy pre-money, adding a post-money option pool and new capital compresses founder ownership quickly, so founders should model dilution before agreeing to pool size or pricing.
 
+#### Full share count example (pre- and post-money)
+
+**Assumptions**
+- Founders start with **13,000,000 shares**.
+- Target **10% post-money option pool**.
+- \$2M new investment on \$6M pre-money.
+
+**Step 1: Compute post-money valuation**
+- \$6M pre + \$2M investment = **\$8M post**.
+
+**Step 2: Solve the post-money share count**
+- Post-money shares include founders + option pool + new investors.
+- Let total post-money shares be **T**.
+
+Founders = 65% of T (because 10% pool + 25% investors)  
+13,000,000 = 0.65T → **T = 20,000,000 shares**
+
+**Step 3: Derive price per share and investor shares**
+- Price per share = \$8M ÷ 20,000,000 = **\$0.40**.
+- Investor shares = \$2M ÷ \$0.40 = **5,000,000 shares**.
+- Option pool shares = 10% of T = **2,000,000 shares**.
+
+**Post-money ownership**
+| Holder | Shares | Ownership |
+| --- | --- | --- |
+| Founders | 13,000,000 | 65% |
+| Option pool | 2,000,000 | 10% |
+| Seed investors | 5,000,000 | 25% |
+| **Total** | **20,000,000** | **100%** |
+
+#### Simple dilution timeline
+
+1. **Day 0:** Founders 100% (13,000,000 shares).
+2. **Create pool:** Founders 90%, pool 10% if created pre-money.
+3. **Close seed:** Founders 65%, pool 10%, investors 25% post-money.
+
 ```mermaid
 flowchart LR
   A[Pre-money<br/>Founders 100%] --> B[Add option pool<br/>Founders 90% | Pool 10%]
   B --> C[Add $2M seed<br/>Founders 65% | Pool 10% | Investors 25%]
 ```
+
+#### VC Method: step-by-step calculation
+
+**Assumptions**
+- Target exit in 5 years: **\$150M**
+- Investor target return: **10×**
+- Desired ownership at entry: **25%**
+- Investment check size: **\$3M**
+
+**Step 1: Compute required value at exit**
+- Investor needs \$3M × 10 = **\$30M** in exit proceeds.
+
+**Step 2: Translate exit proceeds into ownership**
+- Ownership required = \$30M ÷ \$150M = **20%**.
+
+**Step 3: Compare to desired ownership**
+- Target 25% ownership exceeds the 20% required, providing a buffer.
+
+**Step 4: Back into post-money valuation**
+- If \$3M buys 25%, post-money = \$3M ÷ 0.25 = **\$12M**.
+
+**Step 5: Implied pre-money valuation**
+- \$12M post − \$3M investment = **\$9M pre-money**.
+
+**Interpretation**
+- At \$12M post, the investor’s 25% stake would be worth \$37.5M at a \$150M exit, exceeding the 10× target.  
+- Founders can argue that the math supports a higher pre-money unless risk or execution concerns justify more investor ownership.
 
 ### Chapter 5: Summary checklist
 
@@ -195,6 +268,27 @@ flowchart LR
   - \$14M pre with \$12M raise → \$26M post; founders can fall below 30% due to SAFE and pool dilution.
 - **Exhibit summary:** Example cap table shows founders ~22–30%, SAFE ~5–6%, Series A ~52%, option pool ~15% (approximate).
 - **Term snippet:** “\$12M Maple Leaf, \$4M BigPharma at \$15M pre inclusive of 15% pool; SAFE converts at \$5M cap.”
+
+### Mini-case: Valuation negotiation (founder vs. investor)
+
+**Scenario:** OrbitAI is raising \$4M for a Series A. Revenue is \$1.2M ARR growing 12% MoM.  
+**Founder anchor:** \$20M pre-money.  
+**Investor anchor:** \$14M pre-money with a 15% post-money option pool.
+
+**Founder viewpoint**
+- \$20M pre reflects ARR growth and strong retention.
+- Accepts smaller pool (10%) to protect hiring flexibility later.
+- Seeks enough capital to avoid another raise for 18 months.
+
+**Investor viewpoint**
+- ARR quality is promising but churn is unproven at scale.
+- Requires 20–25% ownership for risk-adjusted returns.
+- Wants a larger option pool to recruit a VP Sales and a senior ML lead.
+
+**Negotiation outcome (example)**
+- Agree on **\$16M pre** with **12% post pool** and **\$4M raise** → \$20M post.
+- Investor ownership = \$4M ÷ \$20M = **20%**.
+- Founders accept pool expansion in exchange for a higher pre-money than the investor’s anchor.
 
 ### Discussion prompts and teaching notes
 
@@ -314,6 +408,33 @@ $$
 
 ## Practice Questions
 
+<AccordionGroup>
+  <Accordion title="When should you prefer the VC method over comparables?">
+    **Answer:** Early-stage rounds with limited comparables, where exit-based return math provides a clearer anchor.
+  </Accordion>
+  <Accordion title="What is the impact of a post-money option pool on investor ownership?">
+    **Answer:** It leaves investor ownership unchanged post-close but increases dilution for founders.
+  </Accordion>
+  <Accordion title="If a startup raises $5M on a $15M pre, what is the post-money?">
+    **Answer:** \$20M post-money.
+  </Accordion>
+  <Accordion title="How does a valuation cap in a SAFE affect Series A pricing?">
+    **Answer:** It converts at the lower cap price, giving SAFE holders more shares than Series A investors pay for.
+  </Accordion>
+  <Accordion title="Why might a VC accept a higher valuation with a larger option pool?">
+    **Answer:** The pool ensures critical hires without returning for a down round, protecting future value.
+  </Accordion>
+  <Accordion title="What does a 10× return target imply about holding period risk?">
+    **Answer:** It compensates for high risk and illiquidity typical of early-stage investing.
+  </Accordion>
+  <Accordion title="If exit value doubles, what happens to required ownership for the same return?">
+    **Answer:** Required ownership decreases because the exit proceeds per share increase.
+  </Accordion>
+  <Accordion title="What negotiation lever can founders use besides valuation?">
+    **Answer:** Option pool sizing, investor ownership targets, and governance terms like board seats.
+  </Accordion>
+</AccordionGroup>
+
 **Question:** If pre-money is \$6M and investment is \$2M, what is post-money?  
 <details>
 <summary>Show answer</summary>
@@ -355,5 +476,18 @@ $$
 
 **Answer:** Founder ownership decreases proportionally.
 </details>
+
+### Multi-step exercises
+
+<AccordionGroup>
+  <Accordion title="Exercise 1: VC Method with dilution">
+    **Prompt:** Assume a \$200M exit in 6 years. A VC invests \$5M and wants a 12× return. If founders are willing to sell 25% ownership, what is the maximum post-money? Is the target return achievable?  
+    **Answer:** Required proceeds = \$5M × 12 = \$60M. Required ownership = \$60M ÷ \$200M = 30%. Since founders only offer 25%, the return is not achievable. Max post-money at 25% ownership is \$5M ÷ 0.25 = \$20M, which yields \$50M at exit (10×).
+  </Accordion>
+  <Accordion title="Exercise 2: Cap table with pool and SAFE">
+    **Prompt:** Founders have 8,000,000 shares. A \$1M SAFE with a \$5M cap converts at Series A. Series A is \$4M on \$12M pre with a 10% post pool. Build a simplified ownership breakdown.  
+    **Answer:** SAFE price uses \$5M cap. Pre-money price per share (Series A) = \$12M ÷ 8,000,000 = \$1.50. SAFE price = \$5M ÷ 8,000,000 = \$0.625. SAFE shares = \$1M ÷ \$0.625 = 1,600,000. Series A shares = \$4M ÷ \$1.50 = 2,666,667. Total shares before pool = 8,000,000 + 1,600,000 + 2,666,667 = 12,266,667. Post pool total = 12,266,667 ÷ 0.90 = 13,629,630. Pool shares = 1,362,963. Ownership: founders ~58.7%, SAFE ~11.7%, Series A ~19.6%, pool 10%.
+  </Accordion>
+</AccordionGroup>
 
 <ModuleNav previous="/textbook/modules/module-03" previousLabel="Module 3: Financial Projections and Startup Financials" next="/textbook/modules/module-05" nextLabel="Module 5: Startup Valuation Methods" />
