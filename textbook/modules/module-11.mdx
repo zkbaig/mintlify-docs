@@ -127,6 +127,15 @@ The map below highlights where venture capital activity clusters globally and th
 - **Latin America & Africa:** FX volatility and thinner exit markets.
 </Callout>
 
+### Region-by-region summary: ecosystems and funding norms
+
+| Region | Ecosystem traits | Funding norms |
+| --- | --- | --- |
+| **U.S.** | Deep pools of specialized capital, fast follow-on rounds, aggressive growth targets. | USD-denominated rounds, investor-friendly terms (strong prefs, pro rata), Delaware C-corp as default. |
+| **Europe** | Fragmented markets, strong technical talent, regulatory nuance by country. | Smaller average round sizes, more public co-investment, staged capital with milestone gates. |
+| **Asia** | Large domestic markets, rapid scaling, policy and geopolitical sensitivity. | Strategic/corporate capital common, local investor syndicates, exits influenced by policy shifts. |
+| **LATAM** | Mobile-first adoption, infrastructure gaps create leapfrog plays, macro volatility. | USD-linked pricing where possible, higher risk premiums, more structured governance to manage FX and exit risk. |
+
 ### Chapter 3: Investor vs. founder perspective
 
 | Dimension | Founder lens | Investor lens | Implication |
@@ -150,6 +159,18 @@ The map below highlights where venture capital activity clusters globally and th
 
 **Takeaway:** Even with a strong local exit, FX shifts can compress the USD multiple and change fund performance.
 
+#### FX sensitivity example (EUR to USD)
+
+Assume a €5M investment and a €20M exit. The table shows how USD returns change across FX paths.
+
+| Scenario | Entry FX (USD/EUR) | Exit FX (USD/EUR) | USD entry | USD exit | USD multiple |
+| --- | --- | --- | --- | --- | --- |
+| **FX tailwind** | 1.05 | 1.20 | \$5.25M | \$24.00M | 4.57× |
+| **Flat FX** | 1.10 | 1.10 | \$5.50M | \$22.00M | 4.00× |
+| **FX headwind** | 1.20 | 0.95 | \$6.00M | \$19.00M | 3.17× |
+
+**Interpretation:** A strong local outcome can look mediocre in USD if FX moves against the fund. Stress-test returns and consider hedging or USD pricing when feasible.
+
 ### Chapter 5: Summary checklist
 
 <Steps>
@@ -164,6 +185,31 @@ The map below highlights where venture capital activity clusters globally and th
   </Step>
 </Steps>
 
+### Cross-border structuring case: Delaware/Cayman flip
+
+**Case:** A LATAM fintech raising a U.S.-led Series A must choose between a Delaware C-corp parent or a Cayman holding company for global expansion.
+
+<CardGroup>
+  <Card title="Delaware flip (pros)" icon="check">
+    U.S. investor familiarity, clearer exit paths, easier U.S. banking and contracts.
+  </Card>
+  <Card title="Delaware flip (cons)" icon="triangle-exclamation">
+    U.S. tax exposure, higher compliance costs, potential local incentives lost.
+  </Card>
+  <Card title="Cayman holdco (pros)" icon="check">
+    Neutral holding structure, flexibility for multi-country ops, common in Asia.
+  </Card>
+  <Card title="Cayman holdco (cons)" icon="triangle-exclamation">
+    Perceived opacity, U.S. investor hesitancy, additional legal complexity.
+  </Card>
+</CardGroup>
+
+**Decision prompts:**
+- Where is the next round most likely to be led (U.S., Europe, Asia)?
+- Which jurisdiction supports the most likely exit path (IPO vs. M&A)?
+- How will taxes and IP ownership be handled across operating subsidiaries?
+- Do local regulators restrict offshore ownership or profit repatriation?
+
 ### Mini-exercise: Cross-border risk triage
 
 Use this checklist to pressure-test a cross-border deal before term sheet.
@@ -171,6 +217,16 @@ Use this checklist to pressure-test a cross-border deal before term sheet.
 - [ ] **FX exposure:** Identify the base currency, hedging approach, and sensitivity to rate moves.
 - [ ] **Legal structure:** Confirm jurisdiction choice, ownership rules, and enforceability.
 - [ ] **Exit path:** Validate likely IPO or M&A routes and expected timelines.
+
+### Cross-border diligence checklist
+
+- [ ] **Entity structure:** Cap table, parent/subsidiary alignment, IP ownership.
+- [ ] **Regulatory:** Licensing, data localization, foreign ownership limits.
+- [ ] **Tax:** Withholding, transfer pricing, VAT/GST exposure.
+- [ ] **FX & treasury:** Cash controls, hedging policy, bank access.
+- [ ] **Governance:** Board composition, voting rights, minority protections.
+- [ ] **Commercial:** Local contracts, customer concentration, distributor terms.
+- [ ] **Exit readiness:** Listing venues, buyer appetite, FX impact on proceeds.
 
 ## Key Takeaways
 
@@ -295,42 +351,74 @@ Many rely on foreign IPOs or strategic M&A.
 <details>
 <summary>Show answer</summary>
 
-**Answer:** Returns shrink even if local-currency exit is strong.
+**Answer:** Returns shrink even if the local-currency exit is strong.
 </details>
 
 **Question:** Why syndicate cross-border deals?  
 <details>
 <summary>Show answer</summary>
 
-**Answer:** Share risk and access local expertise.
+**Answer:** To share risk and access local expertise and distribution.
 </details>
 
 **Question:** Name one regulatory risk in cross-border investing.  
 <details>
 <summary>Show answer</summary>
 
-**Answer:** Data privacy restrictions or capital controls.
+**Answer:** Data privacy restrictions, licensing limits, or capital controls.
 </details>
 
 **Question:** What is one reason founders expand internationally?  
 <details>
 <summary>Show answer</summary>
 
-**Answer:** Access to larger markets or talent pools.
+**Answer:** Access to larger markets, specialized talent, or strategic partners.
 </details>
 
 **Question:** Why can exits be harder in some regions?  
 <details>
 <summary>Show answer</summary>
 
-**Answer:** Smaller M&A markets or limited IPO liquidity.
+**Answer:** Smaller M&A markets, limited IPO liquidity, or policy constraints.
 </details>
 
 **Question:** What extra diligence is needed for cross-border deals?  
 <details>
 <summary>Show answer</summary>
 
-**Answer:** Local legal, tax, and compliance review.
+**Answer:** Local legal, tax, compliance, and FX/treasury review.
+</details>
+
+**Question:** When is a Delaware flip most compelling?  
+<details>
+<summary>Show answer</summary>
+
+**Answer:** When future rounds or exits are U.S.-led and investor familiarity is crucial.
+</details>
+
+**Question:** What is one mitigation for FX exposure?  
+<details>
+<summary>Show answer</summary>
+
+**Answer:** Hedge major cash flows, price in USD, or match revenue/expenses by currency.
+</details>
+
+### Mini-cases (with answers)
+
+**Mini-case 1: US fund backing an Asia SaaS company**  
+The company earns revenue in JPY, plans a U.S. Series B, and expects a Nasdaq IPO. What structuring and FX steps should the fund request?  
+<details>
+<summary>Show answer</summary>
+
+**Answer:** Consider a Cayman or Delaware holdco aligned with U.S. exit, move IP to the holdco, set USD reporting, and add FX sensitivity plus hedging policy for JPY cash flows.
+</details>
+
+**Mini-case 2: LATAM marketplace raising from European investors**  
+The business collects in local currency with high inflation and limited M&A buyers. What diligence flags and governance terms should be emphasized?  
+<details>
+<summary>Show answer</summary>
+
+**Answer:** Highlight FX volatility, cash controls, tax exposure, and exit optionality; require stronger reporting, board oversight, and milestone-based tranches.
 </details>
 
 <ModuleNav previous="/textbook/modules/module-10" previousLabel="Module 10: LP–GP Relationships and Venture Fund Structures" next="/textbook/modules/module-12" nextLabel="Module 12: The Future of Venture Capital – Emerging Trends and Alternative Models" />
